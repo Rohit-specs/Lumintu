@@ -31,7 +31,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/images/favicon.ico" />
   </head>
   <body>
     <header class="header">
@@ -41,13 +41,14 @@
             loading="lazy"
             src="assets/images/Lumintu_Logo.svg"
             alt="This is lumintu logo"
-            aria-label="Luninut logo"
+            aria-label="     Lumintu logo
+               "
           />
         </div>
         <div class="header_navbar">
           <ul type="None">
             <li>
-              <a href="./lumintu.html" title="click to go back to home page"
+              <a href="./index.html" title="click to go back to home page"
                 >Home</a
               >
             </li>
@@ -114,11 +115,56 @@
               src="assets/images/top_banner_img_3.png"
               alt="a person with piggy bank and little umberalla in other hand"
             />
-            <img
+            <!-- <img
               loading="lazy"
               src="assets/images/top_banner_img_4.jpg"
               alt="image of rating given by customer"
-            />
+            /> -->
+            <div class="customer_rating_container">
+              <div class="customer_img_container">
+                <img
+                  src="/assets/images/business_people_and_team_building_in_row_in_office.png"
+                  alt="business people and team building in row in office"
+                />
+              </div>
+              <div class="customer_rating_text">
+                Elevated to industry leaders.
+              </div>
+              <div class="customer_star_rating">
+                <ul type="None">
+                  <li>
+                    <img
+                      src="/assets/images/yellow_star.svg"
+                      alt="yellow star for rating"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/assets/images/yellow_star.svg"
+                      alt="yellow star for rating"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/assets/images/yellow_star.svg"
+                      alt="yellow star for rating"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/assets/images/yellow_star.svg"
+                      alt="yellow star for rating"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="/assets/images/yellow_star.svg"
+                      alt="yellow star for rating"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -165,15 +211,24 @@
           </div>
           <div class="about_us_right">
             <div class="about_us_heading">ABOUT US</div>
-            <div class="about_us_title">Innovation Insurance Solutions</div>
-            <div class="about_us_sub_heading">Our Vision</div>
-            <p>
-              Aliquet nec mauris tortor at sed erat. Ut faucibus habitant risus
-              morbi quis egestas etiam lorem. Feugiat lorem aliquam eget mattis
-              cursus. Turpis massa arcu sagittis interdum. Integer molestie.
-            </p>
+            <div class="about_us_title">
+              <h2>Innovation Insurance Solutions</h2>
+            </div>
+            <div class="sub_heading"><h3>Our Vision</h3></div>
+            <div class="vision_content">
+              <p>
+                Aliquet nec mauris tortor at sed erat. Ut faucibus habitant
+                risus morbi quis egestas etiam lorem. Feugiat lorem aliquam eget
+                mattis cursus. Turpis massa arcu sagittis interdum. Integer
+                molestie.
+              </p>
+            </div>
             <div class="button_container_1">
-              <a href="#">Learn More</a>
+              <a
+                href="#"
+                aria-label="click here to learn more about driving insurance"
+                >Learn More</a
+              >
             </div>
           </div>
           <div class="about_us_footer">
@@ -210,52 +265,72 @@
           </div>
           <div class="our_services_insurance_category">
             <div class="insurance_category_container">
-              <img
-                loading="lazy"
-                src="assets/images/Icon_blue.svg"
-                alt="blue card with thunder sign in the middle"
-              />
-              <h3>Life Insurance</h3>
-              <p>
-                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
-                Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.
-              </p>
+              <div class="blue_icon_container">
+                <img
+                  loading="lazy"
+                  src="assets/images/Icon_blue.svg"
+                  alt="blue card with thunder sign in the middle"
+                />
+              </div>
+              <div class="text_content_container">
+                <h3>Life Insurance</h3>
+                <p>
+                  Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
+                  fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
+                  id sit.
+                </p>
+              </div>
             </div>
             <div class="insurance_category_container">
-              <img
-                loading="lazy"
-                src="assets/images/Icon_blue.svg"
-                alt="blue card with thunder sign in the middle"
-              />
-              <h3>Health Insurance</h3>
-              <p>
-                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
-                Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.
-              </p>
-            </div>
-            <div class="insurance_category_container">
-              <img
-                loading="lazy"
-                src="assets/images/Icon_blue.svg"
-                alt="blue card with thunder sign in the middle"
-              />
-              <h3>Auto Insurance</h3>
-              <p>
-                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
-                Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.
-              </p>
-            </div>
-            <div class="insurance_category_container">
-              <img
-                loading="lazy"
-                src="assets/images/Icon_blue.svg"
-                alt="blue card with thunder sign in the middle"
-              />
-              <h3>Home Insurance</h3>
-              <p>
-                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
-                Elementum dui tempor eget ac vitae hendrerit nisl. Erat id sit.
-              </p>
+              <div class="blue_icon_container">
+                <img
+                  loading="lazy"
+                  src="assets/images/Icon_blue.svg"
+                  alt="blue card with thunder sign in the middle"
+                />
+              </div>
+              <div class="text_content_container">
+                <h3>Life Insurance</h3>
+                <p>
+                  Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
+                  fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
+                  id sit.
+                </p>
+              </div>
+              <div class="insurance_category_container">
+                <div class="blue_icon_container">
+                  <img
+                    loading="lazy"
+                    src="assets/images/Icon_blue.svg"
+                    alt="blue card with thunder sign in the middle"
+                  />
+                </div>
+                <div class="text_content_container">
+                  <h3>Life Insurance</h3>
+                  <p>
+                    Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
+                    fusce. Elementum dui tempor eget ac vitae hendrerit nisl.
+                    Erat id sit.
+                  </p>
+                </div>
+              </div>
+              <div class="insurance_category_container">
+                <div class="blue_icon_container">
+                  <img
+                    loading="lazy"
+                    src="assets/images/Icon_blue.svg"
+                    alt="blue card with thunder sign in the middle"
+                  />
+                </div>
+                <div class="text_content_container">
+                  <h3>Life Insurance</h3>
+                  <p>
+                    Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
+                    fusce. Elementum dui tempor eget ac vitae hendrerit nisl.
+                    Erat id sit.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -268,7 +343,6 @@
               <h2>Why Luminut Stands Out in the Insurance Industry</h2>
               <div class="choosing_us_reasons">
                 <div class="choosing_us_reason_container_1">
-
                   <div class="black_card_thunderbolt_container">
                     <img
                       loading="lazy"
@@ -277,7 +351,6 @@
                     />
                   </div>
                   <div class="card_content_1">
-
                     <h3>Experience and Expertise</h3>
                     <p>
                       Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
@@ -295,7 +368,6 @@
                     />
                   </div>
                   <div class="card_content_2">
-
                     <h3>Comprehensive Coverage</h3>
                     <p>
                       Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
@@ -305,7 +377,6 @@
                   </div>
                 </div>
                 <div class="choosing_us_reason_container_3">
-
                   <div class="black_card_thunderbolt_container">
                     <img
                       loading="lazy"
@@ -323,16 +394,50 @@
                   </div>
                 </div>
                 <div class="choose_us_section_right">
-                  <img
+                  <!-- <img
                     loading="lazy"
                     src="assets/images/customer_satisfation_rating_img.png"
                     alt="customer satisfaction rating img"
-                  />
-                  <img
-                    loading="lazy"
-                    src="assets/images/why_choose_us_img_1.png"
-                    alt="person balancing little umberalla over a mini house like structure"
-                  />
+                  /> -->
+                  <div class="customer_rating_container">
+                    <div class="customer_saticfastion_percentage">90%</div>
+                    <div class="customer_rating_text">
+                      Customer Satisfaction
+                    </div>
+                    <div class="customer_star_rating">
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="yellow star for rating"
+                      />
+
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="yellow star for rating"
+                      />
+
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="yellow star for rating"
+                      />
+
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="yellow star for rating"
+                      />
+
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="yellow star for rating"
+                      />
+                    </div>
+                  </div>
+                  <div class="choose_us_image_container">
+                    <img
+                      loading="lazy"
+                      src="assets/images/why_choose_us_img_1.png"
+                      alt="person balancing little umberalla over a mini house like structure"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -340,102 +445,106 @@
         </div>
       </section>
       <section class="pricing_section">
-        <header>
-          <div class="pricing_section_header_left">
-            <div class="pricing_section_heading">PRICING PLANS</div>
-            <div class="pricing_section_title">
-              <h2>Lunintu's Insurance Plans</h2>
+        <div class="container">
+          <header>
+            <div class="pricing_section_header_left">
+              <div class="pricing_section_heading">PRICING PLANS</div>
+              <div class="pricing_section_title">
+                <h2>Lunintu's Insurance Plans</h2>
+              </div>
+            </div>
+            <div class="pricing_section_header_right">
+              <i class="fa-solid fa-phone" aria-label="Call icon"></i>
+              <a href="tel:1234567891">+123 456 789</a>
+            </div>
+          </header>
+          <div class="pricing_section_plan">
+            <div class="pircing_plan">
+              <div class="pricing_plan_heading">$3500 /Month</div>
+              <div class="pricing_plain_title"><h3>Basic Plan</h3></div>
+              <p>
+                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
+              </p>
+              <div class="pricing_plan_subheading">Coverage Included:</div>
+              <ul>
+                <li>Life insurance</li>
+                <li>Health insurance</li>
+                <li>Auto insurance</li>
+                <li>Home insurance</li>
+              </ul>
+              <div class="pricing_plan_subheading">Key Features:</div>
+              <ul>
+                <li>Ideal for families and homeowners</li>
+                <li>Maximum converage and benefits</li>
+              </ul>
+              <div class="pricing_button">
+                <a href="#">Get Started</a>
+              </div>
+            </div>
+            <div class="pircing_plan">
+              <div class="pricing_plan_heading">$6500 /Month</div>
+              <div class="pricing_plain_title"><h3>Standard Plan</h3></div>
+              <p>
+                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
+              </p>
+              <div class="pricing_plan_subheading">Coverage Included:</div>
+              <ul>
+                <li>Life insurance</li>
+                <li>Health insurance</li>
+                <li>Auto insurance</li>
+                <li>Home insurance</li>
+              </ul>
+              <div class="pricing_plan_subheading">Key Features:</div>
+              <ul>
+                <li>Ideal for families and<br />homeowners</li>
+                <li>Maximum converage and benefits</li>
+              </ul>
+              <div class="pricing_button">
+                <a href="#">Get Started</a>
+              </div>
+            </div>
+            <div class="pircing_plan">
+              <div class="pricing_plan_heading">$8500 /Month</div>
+              <div class="pricing_plain_title"><h3>Premium Plan</h3></div>
+              <p>
+                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
+              </p>
+              <div class="pricing_plan_subheading">Coverage Included:</div>
+              <ul>
+                <li>Life insurance</li>
+                <li>Health insurance</li>
+                <li>Auto insurance</li>
+                <li>Home insurance</li>
+              </ul>
+              <div class="pricing_plan_subheading">Key Features:</div>
+              <ul>
+                <li>Ideal for families and<br />homeowners</li>
+                <li>Maximum converage and benefits</li>
+              </ul>
+              <div class="pricing_button">
+                <a href="#">Get Started</a>
+              </div>
             </div>
           </div>
-          <div class="pricing_section_header_right">
-            <i class="fa-solid fa-phone" aria-label="Call icon"></i>
-            <a href="tel:1234567891">+123 456 789</a>
-          </div>
-        </header>
-        <main>
-          <div class="pricing_section_plan">
-            <article class="pircing_plan">
-              <div class="pricing_plan_heading">$3500 /Month</div>
-              <div class="pricing_plain_title">Basic Plan</div>
-              <p>
-                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
-              </p>
-              <div class="pricing_plan_subheading">Coverage Included:</div>
-              <ul>
-                <li>Life insurance</li>
-                <li>Health insurance</li>
-                <li>Auto insurance</li>
-                <li>Home insurance</li>
-              </ul>
-              <div class="pricing_plan_subheading">Key Features:</div>
-              <ul>
-                <li>Ideal for families and<br />homeowners</li>
-                <li>Maximum converage and benefits</li>
-              </ul>
-              <div class="pricing_button">
-                <a href="#">Get Started</a>
-              </div>
-            </article>
-            <article class="pircing_plan">
-              <div class="pricing_plan_heading">$6500 /Month</div>
-              <div class="pricing_plain_title">Standard Plan</div>
-              <p>
-                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
-              </p>
-              <div class="pricing_plan_subheading">Coverage Included:</div>
-              <ul>
-                <li>Life insurance</li>
-                <li>Health insurance</li>
-                <li>Auto insurance</li>
-                <li>Home insurance</li>
-              </ul>
-              <div class="pricing_plan_subheading">Key Features:</div>
-              <ul>
-                <li>Ideal for families and<br />homeowners</li>
-                <li>Maximum converage and benefits</li>
-              </ul>
-              <div class="pricing_button">
-                <a href="#">Get Started</a>
-              </div>
-            </article>
-            <article class="pircing_plan">
-              <div class="pricing_plan_heading">$8500 /Month</div>
-              <div class="pricing_plain_title">Basic Plan</div>
-              <p>
-                Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
-              </p>
-              <div class="pricing_plan_subheading">Coverage Included:</div>
-              <ul>
-                <li>Life insurance</li>
-                <li>Health insurance</li>
-                <li>Auto insurance</li>
-                <li>Home insurance</li>
-              </ul>
-              <div class="pricing_plan_subheading">Key Features:</div>
-              <ul>
-                <li>Ideal for families and<br />homeowners</li>
-                <li>Maximum converage and benefits</li>
-              </ul>
-              <div class="pricing_button">
-                <a href="#">Get Started</a>
-              </div>
-            </article>
-          </div>
-        </main>
+        </div>
       </section>
       <section class="how_it_works">
         <div class="container">
-          <div class="how_it_works_heading">HOW IT WORKS</div>
-          <div class="how_it_works_title">
-            <h2>How Our Insurance Process Works</h2>
+          <div class="header_how_it_works">
+            <div class="how_it_works_heading">HOW IT WORKS</div>
+            <div class="how_it_works_title">
+              <h2>How Our Insurance Process Works</h2>
+            </div>
           </div>
 
           <div class="card_type_1">
-            <img
-              loading="lazy"
-              src="assets/images/how_it_work_section_img_1.png"
-              alt="person holding small umberallas with home model"
-            />
+            <div class="card_img_wrapper">
+              <img
+                loading="lazy"
+                src="assets/images/how_it_work_section_img_1.png"
+                alt="person holding small umberallas with home model"
+              />
+            </div>
             <div class="how_it_works_content_container">
               <h3>Consultation and Assessment</h3>
             </div>
@@ -504,20 +613,24 @@
                   fusce. Elementum dui tempor eget ac vitae hendrerit nisl.
                 </p>
               </div>
-              <img
-                loading="lazy"
-                src="assets/images/how_it_work_section_img_2.png"
-                alt="person showing small house model in his palm"
-              />
+              <div class="card_img_wrapper">
+                <img
+                  loading="lazy"
+                  src="assets/images/how_it_work_section_img_2.png"
+                  alt="person holding small umberallas with home model"
+                />
+              </div>
             </div>
           </div>
 
           <div class="card_type_1">
-            <img
-              loading="lazy"
-              src="assets/images/how_it_work_section_img_3.png"
-              alt="person holding little blue umberalla with piggy bank on the table"
-            />
+            <div class="card_img_wrapper">
+              <img
+                loading="lazy"
+                src="assets/images/how_it_work_section_img_3.png"
+                alt="person holding small umberallas with home model"
+              />
+            </div>
             <div class="how_it_works_content_container">
               <h3>Enrollment and Coverage Activation</h3>
             </div>
@@ -578,49 +691,175 @@
           </div>
           <section class="testimonial_content">
             <article class="testimonial_container">
-              <img
-                loading="lazy"
-                src="assets/images/testimonial_imgae_1.png"
-                alt="customer rating image 1"
-              />
-              <p>
-                “Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
-                fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
-                id sit.”
-              </p>
+              <div class="customer_star_rating_wrapper">
+                <div class="customer_img_container">
+                  <img
+                    src="/assets/images/portrait_of_happy_black_male_psychologist_looking.png"
+                    alt="portrait of happy black male psychologist"
+                  />
+                </div>
+                <div class="customer_star_rating_container">
+                  <ul type="None">
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="customer_name_wrapper">
+                  <p>Melba King, Consultant</p>
+                </div>
+              </div>
+              <div class="review_text_wrapper">
+                <p>
+                  “Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
+                  fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
+                  id sit.”
+                </p>
+              </div>
             </article>
             <article class="testimonial_container">
-              <img
-                loading="lazy"
-                src="assets/images/testimonial_imgae_2.png"
-                alt="customer rating image 2"
-              />
-              <p>
-                “Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
-                fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
-                id sit.”
-              </p>
+              <div class="customer_star_rating_wrapper">
+                <div class="customer_img_container">
+                  <img
+                    src="/assets/images/caucasian_businessman_holding_plans_for_a_new.png"
+                    alt="caucasian businessman holding plans"
+                  />
+                </div>
+                <div class="customer_star_rating_container">
+                  <ul type="None">
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="customer_name_wrapper">
+                  <p>Cora Murphy, Architect</p>
+                </div>
+              </div>
+              <div class="review_text_wrapper">
+                <p>
+                  “Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
+                  fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
+                  id sit.”
+                </p>
+              </div>
             </article>
             <article class="testimonial_container">
-              <img
-                loading="lazy"
-                src="assets/images/testimonial_imgae_3.png"
-                alt="customer rating image 3"
-              />
-              <p>
-                “Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
-                fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
-                id sit.”
-              </p>
+              <div class="customer_star_rating_wrapper">
+                <div class="customer_img_container">
+                  <img
+                    src="/assets/images/portrait_of_female_architect_in_shirt_standing.png"
+                    alt="portrait of female architect in shirt standing"
+                  />
+                </div>
+                <div class="customer_star_rating_container">
+                  <ul type="None">
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/yellow_star.svg"
+                        alt="this is yellow star of rating"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="customer_name_wrapper">
+                  <p>Sherly Boyer, Engineer</p>
+                </div>
+              </div>
+              <div class="review_text_wrapper">
+                <p>
+                  “Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
+                  fusce. Elementum dui tempor eget ac vitae hendrerit nisl. Erat
+                  id sit.”
+                </p>
+              </div>
             </article>
           </section>
         </div>
       </section>
-      <section class="get_started_section">
+      <section class="get_started_and_get_in_touch">
         <div class="container">
-          <div class="get_started_left">
-            <div class="get_started_heading">GET STARTED</div>
-            <div class="get_started_title">
+          <div class="get_left">
+            <div class="get_heading">GET STARTED</div>
+            <div class="get_title">
               <h2>
                 Get Protected Now: <br />
                 Act with Lumintu <br />
@@ -636,7 +875,7 @@
                   alt="call icon"
                 />
                 <h4>Phone Number</h4>
-                <a aria-label="click here to call us" href="tel:5555555"
+                <a aria-label="click here to call us" href="tel:5555555555"
                   >(555)555-5555</a
                 >
               </li>
@@ -661,7 +900,7 @@
               </li>
             </ul>
           </div>
-          <div class="get_started_right">
+          <div class="get_right">
             <form action="#">
               <div class="form_field">
                 <label for="name"><h3>Your Name</h3></label>
@@ -708,7 +947,7 @@
               loading="lazy"
               src="assets/images/Lumintu_Logo.svg"
               alt="This is lumintu logo"
-              aria-label="Luninut logo"
+              aria-label="Lumintu logo"
             />
             <p class="footer_section_heading">Empowering Your Peace of Mind</p>
             <p>
@@ -723,7 +962,7 @@
           <div class="footer_company_section">
             <p class="footer_section_heading">Company</p>
             <ul type="None">
-              <li><a href="/lumintu.html">Home</a></li>
+              <li><a href="/index.html">Home</a></li>
               <li><a target="_blank" href="/about-us.html">About Us</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Events</a></li>
@@ -741,8 +980,8 @@
           <div class="footer_work_hour_section">
             <ul type="None">
               <li>
-                <i class="fa-regular fa-clock" aria-label="clock icon"></i> 9 AM
-                - 5 PM, Monday - Saturday
+                <i class="fa-regular fa-clock" aria-label="clock icon"></i>
+                <p>9 AM - 5 PM, Monday - Saturday</p>
               </li>
 
               <li>
@@ -750,14 +989,15 @@
                   class="fa-regular fa-paper-plane"
                   aria-label="paper plane icon"
                 ></i>
-                support@kaliber.com
+                <a href="mailto:support@kaliber.com">support@kaliber.com</a>
+                
               </li>
               <li>
                 <i
                   class="fa-solid fa-location-dot"
                   aria-label="location icon"
                 ></i>
-                Jl. Menuju Roma No.01, Lewat Jalur Udara.
+                <address>Jl. Menuju Roma No.01, Lewat Jalur Udara.</address> 
               </li>
             </ul>
           </div>
