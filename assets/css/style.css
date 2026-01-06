@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --black:black;
+    --white:white;
+    --font: "DM Sans", sans-sarif;
+    --primary_color: #003061;
+    --secondary_color: #3AA9E9;
+    --button_bg: #050509;
+    --title_and_font_color: #828284;
+    --grey_font_color: #9F9F9F;
+    --container_width: 1140px;
+
+    --button_padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+    --button-border-radius: 5.210rem;
+    --nav_color: #3AA9E9;
+
+}
+body{
+    font-family: var(--font);
+}
+
+h1{
+    line-height: 120%;
+    letter-spacing: 0%;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+h2{
+    line-height: 120%;
+    letter-spacing: 0%;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
