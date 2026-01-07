@@ -14,19 +14,25 @@
     --grey_font_color: #9F9F9F;
     --main_background: #F3F5FC;
     
+
     --banner_bg: var(--main_background);
     --line_height: 1.225rem;
     --heading_weight: 700;
     
+    /* section */
     --container_width: 1140px;
     --section_padding: 12.5rem 18.75rem ;
     --section_width: 1140px ;
     
-    --title_font_size: 1.0625rem;
     
+    /* paragraph and text */
+    
+    --title_font_size: 1.0625rem;
     --paragraph_size: 1rem;
     --paragraph_line_height: 160%;
     --paragraph_letter_spacing: -3%;
+
+    /* buttons */
     
     --button_font: var(--title_font_size);
     --button_padding: 1.25rem 1.875rem 1.25rem 1.875rem;
@@ -37,10 +43,15 @@
     --button_bg: #050509;
     --button_color: var(--white);
     
+    /* navbar */
     --nav_bg: var(--main_background);
     --nav_hover_color: var(--secondary_color);
     --nav_color: var(--grey_font_color);
     --nav_font_size: var(--title_font_size);
+    --nav_font_weight: 500;
+
+    /* card border color */
+    --card_border_color: #EAEEFF; 
 }
 html,body{
     scroll-behavior: smooth;
@@ -86,11 +97,14 @@ h3{
 .justify-center{
     justify-content: center;
 }
+.justify-between{
+    justify-content: space-between;
+}
 
 .grid-center{
     place-content: center;
 }
-
+/* images */
 img{
     max-width: 100%;
     height: auto;
@@ -125,17 +139,37 @@ img{
 
 }
 .button a,button{
-    color: var();
+    color: var(--white);
     text-decoration: none;
 }
 
-a:where(:hover, :focus, :active){
+.header_navbar ul li a:where(:hover, :focus, :active){
     color: var(--secondary_color);
 }
+
 a{
     text-decoration: none;
     font-size: var(--title_font_size);
-    font-weight: var(--title_and_font_color);
+    font-weight: var(--nav_font_weight);
+    color: var(--secondary_color);
     letter-spacing: var(--paragraph_letter_spacing);
     line-height: var(--paragraph_line_height);
 }
+.header_navbar li a{
+    color: var(--nav_color);  
+}
+
+header,.banner_section,.testimonial_section{
+    background-color: var(--main_background);
+}
+
+.container{
+    width: var(--container_width);
+    margin-inline: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* --------------------header section------------------- */
