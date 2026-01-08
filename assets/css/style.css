@@ -14,6 +14,7 @@
     --title_and_font_color: #828284;
     --grey_font_color: #9F9F9F;
     --main_background: #F3F5FC;
+    --border1: #EAEEFF;
     
 
     --banner_bg: var(--main_background);
@@ -33,7 +34,7 @@
     --paragraph_size: 1rem;
     --paragraph_line_height: 160%;
     --paragraph_letter_spacing: -3%;
-
+    --paragraph_weight:500;
     /* buttons */
     
     --button_font: var(--title_font_size);
@@ -85,6 +86,7 @@ h3{
 .d-flex{
     display: flex;
 }
+
 
 .flex-center{
     display: flex;
@@ -145,35 +147,12 @@ img{
     text-decoration: none;
 }
 
-.header_navbar ul li a:where(:hover, :focus, :active){
-    color: var(--secondary_color);
-}
-
-a{
-    text-decoration: none;
-    font-size: var(--title_font_size);
-    font-weight: var(--nav_font_weight);
-    color: var(--secondary_color);
-    letter-spacing: var(--paragraph_letter_spacing);
-    line-height: var(--paragraph_line_height);
-}
-.header_navbar li a{
-    color: var(--nav_color);  
-}
-
-header,.banner_section,.testimonial_section{
-    background-color: var(--main_background);
-}
-
 .container{
     width: var(--container_width);
     margin-inline: auto;
     /* padding-block: var(--section_padding_block); */
 }
 
-ul li{
-    list-style-type: none;
-}
 
 .position-relative{
     position: relative;
@@ -214,14 +193,47 @@ ul li{
 .gap10{
     gap: 2.5rem;
 }
+/* colors */
+.text-blue{
+    color: var(--secondary_color);
+}
+/* paragraph */
+p{
+    font-size: var(--paragraph_size);
+    font-weight: var(--paragraph_weight);
+    line-height: var(--paragraph_line_height);
+    letter-spacing: var(--paragraph_letter_spacing);
+}
 
 /* --------------------header section------------------- */
+
+.header_navbar a:not(.button):where(:hover, :focus, :active){
+    color: var(--secondary_color);
+}
+
+a{
+    text-decoration: none;
+    font-size: var(--title_font_size);
+    font-weight: var(--nav_font_weight);
+    letter-spacing: var(--paragraph_letter_spacing);
+    line-height: var(--paragraph_line_height);
+}
+
+header a{
+    font-size: var(--title_font_size);
+    color: var(--nav_color); 
+    text-decoration: none;
+}
+
+header,.banner_section,.testimonial_section{
+    background-color: var(--main_background);
+}
 
 
 
 .header {
     background-color: var(--nav_bg);
-    padding: 1.25rem 0;
+    padding-block: 2.5rem ;
 }
 /* 
 Sticky header */
@@ -233,13 +245,32 @@ Sticky header */
 
 /* ====================footer section=================== */
 footer{
-    padding-block: var(--section_padding_block);
+    /* padding-block: var(--section_padding_block); */
     background-color: var(--primary_color);
-    color: var(--grey_font_color);
 }
-.footer_contact_us_section{
-    width: 30%;
-}
+
 .footer_contact_us_section ,.footer_section_heading{
     color: var(--white);
+}
+.footer_top_section .container{
+    --columns: 4;
+    grid-template-columns: repeat(var(--columns),minmax(13.75rem,1fr));
+    justify-content: space-between;
+    justify-items: center;
+    padding-block: 4.375rem 3.125rem;
+}
+.footer_lower_section .container{
+    justify-content: space-between;
+    border-top: 1px solid var(--border1);
+    padding-block: 1.875rem 2.1875rem;
+}
+footer .container a,address,p,.footer_lower_section{
+    color: var(--title_and_font_color);
+}
+footer .container .footer_work_hour_section i{
+    color:var(--secondary_color);
+    display: inline;
+}
+footer .container .footer_work_hour_section p,.footer_work_hour_section address{
+    display: inline;
 }
