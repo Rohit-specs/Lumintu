@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: color 0.4s ease;
 }
 
 :root{
@@ -23,6 +24,7 @@
     --container_width: 1140px;
     --section_padding: 12.5rem 18.75rem ;
     --section_width: 1140px ;
+    --section_padding_block: 9.375rem;
     
     
     /* paragraph and text */
@@ -136,7 +138,7 @@ img{
     font-weight: var(--button_font);
     color: var(--button_color);
     display: inline-block;
-
+    cursor: pointer;
 }
 .button a,button{
     color: var(--white);
@@ -166,10 +168,78 @@ header,.banner_section,.testimonial_section{
 .container{
     width: var(--container_width);
     margin-inline: auto;
+    /* padding-block: var(--section_padding_block); */
 }
 
-ul{
+ul li{
     list-style-type: none;
 }
 
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+
+
+/* gap */
+.gap1{
+    gap: .25rem;
+}
+.gap2{
+    gap: .5rem;
+}
+.gap3{
+    gap: .75rem;
+}
+.gap4{
+    gap: 1rem;
+}
+.gap5{
+    gap: 1.25rem;
+}
+.gap6{
+    gap: 1.5rem;
+}
+.gap7{
+    gap: 1.75rem;
+}
+.gap8{
+    gap: 2rem;
+}
+.gap9{
+    gap: 2.25rem;
+}
+.gap10{
+    gap: 2.5rem;
+}
+
 /* --------------------header section------------------- */
+
+
+
+.header {
+    background-color: var(--nav_bg);
+    padding: 1.25rem 0;
+}
+/* 
+Sticky header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ====================footer section=================== */
+footer{
+    padding-block: var(--section_padding_block);
+    background-color: var(--primary_color);
+    color: var(--grey_font_color);
+}
+.footer_contact_us_section{
+    width: 30%;
+}
+.footer_contact_us_section ,.footer_section_heading{
+    color: var(--white);
+}
