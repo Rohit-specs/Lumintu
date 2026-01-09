@@ -15,6 +15,7 @@
     --grey_font_color: #9F9F9F;
     --main_background: #F3F5FC;
     --border1: #EAEEFF;
+    --border2: #D0DBFF;
     
 
     --banner_bg: var(--main_background);
@@ -25,7 +26,7 @@
     --container_width: 1140px;
     --section_padding: 12.5rem 18.75rem ;
     --section_width: 1140px ;
-    --section_padding_block: 9.375rem;
+    --container_padding_block: 9.375rem;
     
     
     /* paragraph and text */
@@ -161,6 +162,12 @@ img{
     position: absolute;
 }
 
+/* round img */
+.round-img{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
 
 /* gap */
 .gap1{
@@ -252,6 +259,9 @@ footer{
 .footer_contact_us_section ,.footer_section_heading{
     color: var(--white);
 }
+.footer_contact_us_section :where(img,p){
+    padding-bottom: 1.25rem;
+}
 .footer_top_section .container{
     --columns: 4;
     grid-template-columns: repeat(var(--columns),minmax(13.75rem,1fr));
@@ -274,3 +284,25 @@ footer .container .footer_work_hour_section i{
 footer .container .footer_work_hour_section p,.footer_work_hour_section address{
     display: inline;
 }
+footer .footer_contact_us_section a{
+    color: var(--border2);
+}
+/* .footer_work_hour_section p:not(.footer_section_heading){
+    margin-left: px;
+
+} */
+
+/* ===============hero section============ */
+.customer_rating_container{
+    width: 20.625rem;
+    height: 5rem;
+    border-radius: 4px 50px 50px 4px;
+    padding-block: .625rem;
+    padding-inline: 1.875rem;
+    align-content: center;
+    background-color: var(--white);
+}
+.customer_rating_text::after .customer_rating_text::before {
+
+}
+
