@@ -79,10 +79,24 @@ h1,h2{
     font-weight: var(--heading_weight);
     font-size: 3.5rem;
 }
+.h1,.h2{
+    line-height: var(--line_height);
+    letter-spacing: 0%;
+    font-weight: var(--heading_weight);
+    font-size: 3.5rem;
+}
 h2{
     font-size: 3rem;
 }
+.h2{
+    font-size: 3rem;
+}
 h3{
+    font-size: 2rem;
+    letter-spacing: -2%;
+    line-height: var(--line_height);
+}
+.h3{
     font-size: 2rem;
     letter-spacing: -2%;
     line-height: var(--line_height);
@@ -127,6 +141,9 @@ h3{
 }
 .block{
     display: block;
+}
+.inline-block{
+    display: inline-block;
 }
 /* images */
 img{
@@ -193,6 +210,9 @@ img{
 .grey-color{
     color: var(--grey_font_color);
 }
+.white-color{
+    color: var(--white);
+}
 
 
 /* gap */
@@ -229,10 +249,7 @@ img{
 .gapx{
     column-gap: 3.125rem;
 }
-/* colors */
-.text-blue{
-    color: var(--secondary_color);
-}
+
 /* paragraph */
 p{
     font-size: var(--paragraph_size);
@@ -272,8 +289,6 @@ header a{
 header,.banner_section,.testimonial_section{
     background-color: var(--main_background);
 }
-
-
 
 .header {
     background-color: var(--nav_bg);
@@ -393,6 +408,7 @@ footer .footer_contact_us_section a{
     background-color: var(--secondary_color);
     border-radius: .625rem .625rem 0rem 0rem ;
     height: 15rem;
+    /* overflow: hidden; */
 }
 .banner_section .growth_rate> :where(img,div){
     width: 11.5625rem;
@@ -401,5 +417,31 @@ footer .footer_contact_us_section a{
     width: 20rem;
     height: 34.625rem;
 }
+.growth_rate .background-image img{
+
+    height: 100%;
+    width: 100%;  
+    /* top: -5.11rem; */
+    /* left: -8.84rem; */
+    transform: rotate(-5.77deg);
+    object-position: center;
+    /* z-index: 1; */
+}
+
+
+/* ============fun facts=========== */
+.fun_facts{
+    background-color: var(--primary_color);
+}
+.fun_facts .container{
+    padding-block: 6.25rem;
+}
+.fun_facts .divider{
+    width: .0625rem;
+    height: 2.5rem;
+    background-color: var(--border1);
+}
+
+
 
 
