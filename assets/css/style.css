@@ -281,9 +281,11 @@ p{
     letter-spacing: var(--sub_title_line_height);
 }
 .thunderbold-card{
-    padding-block: 2.875rem;
+    padding-block: 1.75rem;
     padding-inline: 2.5rem;
     border-radius: 5px;
+    /* align-self: start; */
+    /* display: inline-flex; */
 }
 
 /* --------------------header section------------------- */
@@ -384,10 +386,10 @@ footer .footer_contact_us_section a{
     font-weight: var(--paragraph_weight);
 }
 .customer_rating_text::after  {
-    content: '“';
+    content: '”' ;
 }
 .customer_rating_text::before{
-    content: '”';
+    content: '“';
 }
 .banner_section .container{
     padding-top: 6.25rem;
@@ -506,8 +508,8 @@ footer .footer_contact_us_section a{
     grid-column: 2/3;
     grid-row: 2/3;
 }
-.about_us :where(.title .sub-title){
-    margin-bottom: .875rem;
+.about_us :where(.sub_heading){
+    margin-bottom: .75rem;
 }
 .about_us .about_us_title{
     margin-bottom: 2.5rem;
@@ -515,6 +517,9 @@ footer .footer_contact_us_section a{
 .about_us .button{
     margin-top: 1.25rem;
 }
+/* .about_us_right .sub_heading{
+
+} */
 
 /* ============our services============= */
 .our_services_section{
@@ -523,14 +528,39 @@ footer .footer_contact_us_section a{
 .our_services_insurance_category{
     --columns:2;
     grid-template-columns: repeat(var(--columns),1fr);
+    gap: 2.5rem;
 }
 .insurance_category_container{
     background-color: var(--main_background);
+    padding: 2.5rem 3.125rem;
+    border-radius: .0625rem;
+    gap: 1.875rem;
 }
 .blue_icon_container{
     background-color: var(--primary_color);
 }
+.our_services_section_title p{
+    right: 0;
+    bottom: 0;
+}
+.our_services_section_heading{
+    margin-bottom: .875rem;
+}
+.our_services_section_title{
+    margin-bottom: 3.75rem;
+}
+.text_content_container h3{
+    margin-bottom: .625rem;
+}
+/* .insurance_category_container img{
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+} */
 
 
+/* ==============why choose us=============== */
+.choose_us_section .container{
+    padding-block: 7.5rem;
+}
 
 
