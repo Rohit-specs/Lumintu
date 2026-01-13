@@ -51,6 +51,12 @@
     --sub_title_letter_space: 0%;
     --sub_title_font_weight: 700;
 
+    /* Body 1 text */
+    --body_weight: 400;
+    --body_size: 1.125rem;
+    --body_line_height: 160%;
+    --body_letter_spacing: -3%;
+    --body_font_color: #050509;
 
     /* buttons */
     
@@ -77,6 +83,8 @@
 html,body{
     scroll-behavior: smooth;
 }
+
+/* Typography */
 
 body{
     font-family: var(--font);
@@ -110,10 +118,19 @@ h3{
     letter-spacing: -2%;
     line-height: var(--line_height);
 }
+.body-text{
+    font-size: var(--body_size);
+    font-weight: var(--body_weight);
+    line-height: var(--body_line_height);
+    letter-spacing: var(--body_letter_spacing);
+    color: var(--body_font_color);
+}
+
+/* Grid and flexbox */
+
 .d-grid{
     display: grid;
 }
-
 
 .d-flex{
     display: flex;
@@ -121,7 +138,6 @@ h3{
 .flex-column{
     flex-direction: column;
 }
-
 
 .flex-center{
     display: flex;
@@ -199,12 +215,24 @@ img{
     /* padding-block: var(--section_padding_block); */
 }
 
-
+/* Positions */
 .position-relative{
     position: relative;
 }
 .position-absolute{
     position: absolute;
+}
+.right{
+    right: 0;
+}
+.left{
+    left: 0;
+}
+.bottom{
+    bottom: 0;
+}
+.top{
+    top: 0;
 }
 
 /* round img */
@@ -408,6 +436,9 @@ footer .container .footer_work_hour_section p,.footer_work_hour_section address{
 footer .footer_contact_us_section a{
     color: var(--border2);
 }
+footer a:is(:hover,:active,:focus){
+    color: var(--secondary_color);
+}
 /* .footer_work_hour_section p:not(.footer_section_heading){
     margin-left: px;
 
@@ -431,6 +462,7 @@ footer .footer_contact_us_section a{
     box-shadow: var(--border_box);
     font-size: 0.875rem;
     font-weight: var(--paragraph_weight);
+    justify-content: space-evenly;
 }
 .customer_rating_text::after  {
     content: '”' ;
@@ -491,7 +523,12 @@ footer .footer_contact_us_section a{
     width: 21rem;
     transform: rotate(.77deg);
     left: -4.1rem;
-
+}
+.banner_section .d-flex span a:is(:hover,:active,:focus){
+    color: var(--secondary_color);
+}
+.help-play-video a:is(:hover,:active,:focus){
+    color: var(--primary_color);
 }
 /* ============fun facts=========== */
 .fun_facts{
@@ -594,6 +631,9 @@ footer .footer_contact_us_section a{
 .blue_icon_container{
     align-self: flex-start;
 }
+.our_services_section_title a:is(:hover,:active,:focus){
+    color: var(--primary_color);
+}
 
 
 /* ==============why choose us=============== */
@@ -630,12 +670,13 @@ footer .footer_contact_us_section a{
 .choose_us_section .customer_rating_container{
     top: 10rem;
     left: -3.75rem;
+    justify-content: space-evenly;
 }
 
 /* ============pricing plans=========== */
 
 .pricing_section .container{
-    margin-block: 7.5rem;
+    padding-block: 7.5rem;
 }
 .pricing_section h2 p{
     right: 0;
@@ -688,6 +729,13 @@ footer .footer_contact_us_section a{
     margin-top: 1.5rem;
     text-align: center;
 }
+.bg-primary .button:is(:hover,:active,:focus){
+    color: var(--primary_color);
+    outline: .25rem solid var(--secondary_color);
+}
+.pricing_section_header a:is(:hover,:active,:focus){
+    color: var(--primary_color);
+}
 /* ===========how it works========== */
 .how_it_works_heading{
     margin-bottom: .875rem;
@@ -713,7 +761,6 @@ footer .footer_contact_us_section a{
     --columns: 2;
     grid-template-columns: repeat(var(--columns),1fr);
     align-items: center;
-    justify-items: ri;
 }
 .header_how_it_works{
     justify-self: center;
@@ -722,15 +769,177 @@ footer .footer_contact_us_section a{
     margin-bottom: 3.75rem;
 }
 .how_it_works ul{
-    list-style-position: inside;
     list-style-image: url(../images/corner-down-right.svg);
 }
 .how_it_works_sub_heading{
     display: inline;
 }
-.how_it_works ul p{
-    display: inline;
+.how_it_works .card_type_2 li{
+    margin-left: 4.5rem;
+}
+.how_it_works .sub-title{
+    margin-bottom: 1.5rem;
+}
+.sub-title span{
+    font-size: 2.5rem;
+    line-height: 120%;
+    letter-spacing: -2%;
+    margin-right: 1rem;
+}
+.how_it_works .sub-title .position-absolute{
+    bottom: -1rem;
+}
+.how_it_works .card_type_1 li{
+    margin-left: 7rem;
+}
+.how_it_works_content_wrapper p{
+    font-size: .875rem;
+}
+.how_it_works_sub_heading .body-text{
+    margin-bottom: .375rem;
+}
+.how_it_works .last_paragraph{
+    width: 36.375rem;
+    height: auto;
+    justify-self: center;
+    margin-top: 4.375rem;
+    padding-bottom: 12.3125rem;
+}
+.how_it_works .button{
+    top: 5rem;
+}
+.how_it_works .last_paragraph .divider{
+    width: 16.250rem;
+    left: -17.150rem;
+    top: 2.1rem;
+}
+
+/* ========= testimonial ========= */
+
+.testimonial_section_heading{
+    margin-bottom: .875rem;
+}
+.testimonial_section .container{
+    padding-block: 7.5rem;
+}
+.testimonial_content{
+    --columns:3;
+    grid-template-columns: repeat(var(--columns),1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+.customer_star_rating_wrapper{
+    column-gap: .75rem;
+    align-items: center;
+}
+.testimonial_container{
+    padding: 2.5rem;
+    border: .0625rem solid var(--border1);
+}
+.testimonial_section .round-img{
+    border: .0625rem solid var(--border1);
+}
+.customer_name_wrapper p{
+    color: #050509;
+    font-size: 0.875rem;
+}
+.testimonial_section .divider{
+    height: .0625rem;
+    margin-block: 1.25rem 1.5rem;
+}
+
+/* =========== Get Started=========== */
+.get_started_and_get_in_touch .container{
+    padding-block: 7.5rem;
+    --columns:2;
+    grid-template-columns: repeat(var(--columns),1fr);
+    column-gap: 8.75rem;
+}
+.get_started_and_get_in_touch .title{
+    margin-bottom: .875rem;
+}
+.get_started_and_get_in_touch h2{
+    margin-bottom: 2rem;
+}
+.get_started_and_get_in_touch .divider{
+    height: .0625rem;
+    margin-block: 1.25rem;
+}
+.contact_container{
+    row-gap: 1.25rem;
+}
+.get_started_and_get_in_touch .contact{
+    column-gap: 1.25rem;
+}
+.get_started_and_get_in_touch h4{
+    font-size: 1.250rem;
+    font-weight: 500;
+}
+.get_started_and_get_in_touch input ,.get_started_and_get_in_touch textarea{
+    border-radius: .3125rem;
+    border: .0625rem solid var(--border1);
+    resize: none;
+    margin-block: .875rem 1.25rem;
+}
+.get_started_and_get_in_touch input{
+    height: 3.125rem;
+}
+.get_started_and_get_in_touch ::placeholder{
+    color: var(--grey_font_color);
+    padding-left: 1.875rem;
+    font-size: .875rem;
+    font-family: var(--font);
+}
+.get_started_and_get_in_touch .get_right{
+    padding: 3.375rem 4rem;
+}
+.get_started_and_get_in_touch .button{
+    margin-top: 1rem;
+}
+.get_started_and_get_in_touch textarea::placeholder{
+    padding-top: .875rem;
+}
+.get_started_and_get_in_touch a:is(:hover,:active,:focus){
+    color: var(--secondary_color);
+}
+
+/* ========some button styling========= */
+.button:hover{
+
+  transform: scale(1.1);
+    outline: .250rem solid var(--primary_color);
+    color: var(--secondary_color);
+}
+.button{
+    transition: transform .2s linear;
 }
 
 
 
+
+/* ===========================ABOUT US PAGE======================= */
+
+/* ==========about us hero section=========== */
+.top_banner .container{
+    padding-block: 6.25rem 8.75rem;
+}
+.top_banner :where(h1 ,p ){
+    text-align: center;
+}
+.top_banner h1{
+    padding-bottom: 1.25rem;
+}
+.top_banner p{
+    width: 36.375rem;
+    margin: 0 auto;
+}
+
+
+/* ============get mission=========== */
+
+.get_mission .container{
+    padding-block: 5.625rem 7.5rem;
+    --columns:2;
+    grid-template-columns: repeat(var(--columns),1fr);
+    
+}
