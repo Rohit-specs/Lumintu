@@ -122,18 +122,19 @@
           <div class="banner_section_right d-grid position-relative">
             <div class="growth_rate d-flex flex-column">
               <div class="background-image position-relative">
-                <img
-                  loading="lazy"
-                  class="inline-block object-fit-cover position-absolute"
-                  src="assets/images/top_banner_img_1.png"
-                  alt="a man spreading his one hand and and file in the other hand"
-                />
               </div>
-
               <img
                 loading="lazy"
-                src="assets/images/top_banner_img_2.jpg"
-                alt="this image shows growth rate"
+                class="inline-block position-absolute"
+                src="assets/images/top_banner_img_1.png"
+                alt="a man spreading his one hand and and file in the other hand"
+              />
+              
+              <img
+              class="z1"
+              loading="lazy"
+              src="assets/images/top_banner_img_2.jpg"
+              alt="this image shows growth rate"
               />
             </div>
 
@@ -293,7 +294,7 @@
       </section>
       <section class="our_services_section">
         <div class="container">
-          <div class="our_services_section_heading title">OUR SERVICES</div>
+          <div class="our_services_section_heading title grey-color">OUR SERVICES</div>
           <div class="our_services_section_title position-relative">
             <h2>
               Our Range of Services
@@ -377,26 +378,26 @@
           </div>
         </div>
       </section>
-      <section class="choose_us_section">
-        <div class="container d-flex">
+      <section class="choose_us_section bg-primary">
+        <div class="container d-grid">
           <div class="choose_us_section_left">
-            <div class="choose_us_section_left_heading">WHY CHOOSE US</div>
+            <div class="choose_us_section_left_heading border1">WHY CHOOSE US</div>
 
-            <div class="choose_us_section_left_title">
+            <div class="choose_us_section_left_title white-color">
               <h2>Why Luminut Stands Out in the Insurance Industry</h2>
 
-              <div class="choosing_us_reasons">
-                <div class="choosing_us_reason_container_1">
-                  <div class="black_card_thunderbolt_container">
+              <div class="choosing_us_reasons d-flex flex-column">
+                <div class="choosing_us_reason_container d-flex">
+                 
                     <img
                       loading="lazy"
                       src="assets/images/thunderbolt_icon.svg"
-                      class="thunderbold-card"
+                      class="thunderbold-card black_card_thunderbolt_container"
                       alt="black card with thunderbold sign in the middle"
                     />
-                  </div>
+                  
                   <div class="card_content_1">
-                    <h3>Experience and Expertise</h3>
+                    <h3 class="white-color sub-title">Experience and Expertise</h3>
                     <p>
                       Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
                       fusce. Elementum dui tempor eget ac vitae hendrerit nisl.
@@ -405,17 +406,17 @@
                   </div>
                 </div>
 
-                <div class="choosing_us_reason_container_2">
-                  <div class="black_card_thunderbolt_container">
+                <div class="choosing_us_reason_container d-flex">
+                  
                     <img
                       loading="lazy"
                       src="assets/images/thunderbolt_icon.svg"
-                      class="thunderbold-card"
+                      class="thunderbold-card black_card_thunderbolt_container"
                       alt="black card with thunderbold sign in the middle"
                     />
-                  </div>
+                
                   <div class="card_content_2">
-                    <h3>Comprehensive Coverage</h3>
+                    <h3 class="white-color sub-title">Comprehensive Coverage</h3>
                     <p>
                       Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
                       fusce. Elementum dui tempor eget ac vitae hendrerit nisl.
@@ -424,17 +425,17 @@
                   </div>
                 </div>
 
-                <div class="choosing_us_reason_container_3">
-                  <div class="black_card_thunderbolt_container">
+                <div class="choosing_us_reason_container d-flex">
+               
                     <img
                       loading="lazy"
                       src="assets/images/thunderbolt_icon.svg"
-                      class="thunderbold-card"
+                      class="thunderbold-card black_card_thunderbolt_container"
                       alt="black card with thunderbold sign in the middle"
                     />
-                  </div>
+               
                   <div class="card_content_3">
-                    <h3>Customer-Centric Approach</h3>
+                    <h3 class="white-color sub-title">Customer-Centric Approach</h3>
                     <p>
                       Aenean adipiscing amet dui cursus rhoncus nibh nec tortor
                       fusce. Elementum dui tempor eget ac vitae hendrerit nisl.
@@ -446,9 +447,10 @@
             </div>
           </div>
 
-          <div class="choose_us_section_right">
-            <div class="customer_rating_container">
-              <div class="customer_saticfastion_percentage">90%</div>
+          <div class="choose_us_section_right position-relative">
+            <div class="customer_rating_container align-center justify-between position-absolute d-flex">
+              <div class="customer_saticfastion_percentage secondary-color h3">90<span class="border1">%</span></div>
+              <div >
               <div class="customer_rating_text">Customer Satisfaction</div>
 
               <div class="customer_star_rating">
@@ -472,7 +474,7 @@
                   src="/assets/images/yellow_star.svg"
                   alt="yellow star for rating"
                 />
-              </div>
+              </div></div>
             </div>
 
             <div class="choose_us_image_container">
@@ -490,82 +492,82 @@
         <div class="container">
           <div class="pricing_section_header">
             <div class="pricing_section_header_left">
-              <div class="pricing_section_heading">PRICING PLANS</div>
-              <div class="pricing_section_title">
-                <h2>Lunintu's Insurance Plans</h2>
+              <div class="pricing_section_heading grey2-color">PRICING PLANS</div>
+              <div class="pricing_section_title position-relative">
+                <h2>Lunintu's Insurance Plans <p class="inline position-absolute"><i class="fa-solid fa-phone secondary-color inline" aria-label="Call icon"><a class="secondary-color" href="tel:1234567891">+123 456 789</a></i></p></h2>
               </div>
             </div>
-            <div class="pricing_section_header_right">
-              <i class="fa-solid fa-phone" aria-label="Call icon"></i>
-              <a href="tel:1234567891">+123 456 789</a>
-            </div>
+              
           </div>
-          <div class="pricing_section_plan">
-            <div class="pircing_plan">
-              <div class="pricing_plan_heading">$3500 /Month</div>
+          <div class="pricing_section_plan d-grid">
+            <div class="pircing_plan bg-border1">
+              <div class="pricing_plan_heading sub-title">$3500 <p class="secondary-color inline">/Month</p></div>
               <div class="pricing_plain_title"><h3>Basic Plan</h3></div>
               <p>
                 Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
               </p>
+              <div class="pricing_section_divider"></div>
               <div class="pricing_plan_subheading">Coverage Included:</div>
-              <ul>
+              <ul class="grey3-color">
                 <li>Life insurance</li>
                 <li>Health insurance</li>
                 <li>Auto insurance</li>
                 <li>Home insurance</li>
               </ul>
               <div class="pricing_plan_subheading">Key Features:</div>
-              <ul>
+              <ul class="grey3-color">
                 <li>Ideal for families and homeowners</li>
                 <li>Maximum converage and benefits</li>
               </ul>
-              <div class="button">
-                <a href="#">Get Started</a>
-              </div>
+           
+                <a class="button w-100 " href="#">Get Started</a>
+            
             </div>
-            <div class="pircing_plan">
-              <div class="pricing_plan_heading">$6500 /Month</div>
-              <div class="pricing_plain_title"><h3>Standard Plan</h3></div>
+            <div class="pircing_plan bg-primary">
+              <div class="pricing_plan_heading sub-title white-color">$6500 <p class="secondary-color inline">/Month</p></div>
+              <div class="pricing_plain_title white-color"><h3>Standard Plan</h3></div>
               <p>
                 Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
               </p>
-              <div class="pricing_plan_subheading">Coverage Included:</div>
-              <ul>
+              <div class="pricing_section_divider"></div>
+              <div class="pricing_plan_subheading white-color">Coverage Included:</div>
+              <ul class="grey-color">
                 <li>Life insurance</li>
                 <li>Health insurance</li>
                 <li>Auto insurance</li>
                 <li>Home insurance</li>
               </ul>
-              <div class="pricing_plan_subheading">Key Features:</div>
-              <ul>
-                <li>Ideal for families and<br />homeowners</li>
+              <div class="pricing_plan_subheading white-color">Key Features:</div>
+              <ul class="grey-color">
+                <li>Ideal for families and homeowners</li>
                 <li>Maximum converage and benefits</li>
               </ul>
-              <div class="button">
-                <a href="#">Get Started</a>
-              </div>
+     
+                <a class="button w-100 white-bg black-color" href="#">Get Started</a>
+          
             </div>
-            <div class="pircing_plan">
-              <div class="pricing_plan_heading">$8500 /Month</div>
+            <div class="pircing_plan bg-border1">
+              <div class="pricing_plan_heading sub-title">$8500 <p class="secondary-color inline">/Month</p></div>
               <div class="pricing_plain_title"><h3>Premium Plan</h3></div>
               <p>
                 Aenean adipiscing amet dui cursus rhoncus nibh nec tortor fusce.
               </p>
+              <div class="pricing_section_divider"></div>
               <div class="pricing_plan_subheading">Coverage Included:</div>
-              <ul>
+              <ul class="grey3-color">
                 <li>Life insurance</li>
                 <li>Health insurance</li>
                 <li>Auto insurance</li>
                 <li>Home insurance</li>
               </ul>
               <div class="pricing_plan_subheading">Key Features:</div>
-              <ul>
-                <li>Ideal for families and<br />homeowners</li>
+              <ul class="grey3-color">
+                <li>Ideal for families and homeowners</li>
                 <li>Maximum converage and benefits</li>
               </ul>
-              <div class="button">
-                <a href="#">Get Started</a>
-              </div>
+            
+                <a href="#" class="button w-100 ">Get Started</a>
+             
             </div>
           </div>
         </div>

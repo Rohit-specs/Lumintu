@@ -16,6 +16,9 @@
     --main_background: #F3F5FC;
     --border1: #EAEEFF;
     --border2: #D0DBFF;
+    --grey-secondary:#58585B;
+    --grey-third: #828284;
+
     
 
     --banner_bg: var(--main_background);
@@ -222,6 +225,44 @@ img{
 .white-color{
     color: var(--white);
 }
+.border1{
+    color: var(--border1);
+}
+.border2{
+    color: var(--border2);
+}
+.bg-primary{
+    background-color: var(--primary_color);
+}
+.bg-secondary{
+    background-color: var(--secondary_color);
+}
+.main-bg{
+    background-color: var(--main_background);
+}
+.bg-border1{
+    background-color: var(--border1);
+}
+.black-color{
+    color: var(--black);
+}
+.white-bg{
+    background-color: var(--white);
+}
+.grey2-color{
+    color: var(--grey-secondary);
+}
+.grey3-color{
+    color: var(--grey-third);
+}
+
+/* z-index */
+.z1{
+    z-index: 1;
+}
+.z-1{
+    z-index: -1;
+}
 
 
 /* gap */
@@ -281,11 +322,9 @@ p{
     letter-spacing: var(--sub_title_line_height);
 }
 .thunderbold-card{
-    padding-block: 1.75rem;
-    padding-inline: 2.5rem;
+    padding-block: 2.1rem;
+    padding-inline: 1.9375rem;
     border-radius: 5px;
-    /* align-self: start; */
-    /* display: inline-flex; */
 }
 
 /* --------------------header section------------------- */
@@ -431,7 +470,6 @@ footer .footer_contact_us_section a{
     background-color: var(--secondary_color);
     border-radius: .625rem .625rem 0rem 0rem ;
     height: 15rem;
-    /* overflow: hidden; */
 }
 .banner_section .growth_rate> :where(img,div){
     width: 11.5625rem;
@@ -440,18 +478,13 @@ footer .footer_contact_us_section a{
     width: 20rem;
     height: 34.625rem;
 }
-.growth_rate .background-image img{
+.growth_rate .position-absolute{
+    height: 16rem;
+    width: 21rem;
+    transform: rotate(.77deg);
+    left: -4.1rem;
 
-    height: 100%;
-    width: 100%;  
-    /* top: -5.11rem; */
-    /* left: -8.84rem; */
-    transform: rotate(-5.77deg);
-    object-position: center;
-    /* z-index: 1; */
 }
-
-
 /* ============fun facts=========== */
 .fun_facts{
     background-color: var(--primary_color);
@@ -517,9 +550,7 @@ footer .footer_contact_us_section a{
 .about_us .button{
     margin-top: 1.25rem;
 }
-/* .about_us_right .sub_heading{
 
-} */
 
 /* ============our services============= */
 .our_services_section{
@@ -552,15 +583,100 @@ footer .footer_contact_us_section a{
 .text_content_container h3{
     margin-bottom: .625rem;
 }
-/* .insurance_category_container img{
-    width: 1.5rem;
-    aspect-ratio: 1/1;
-} */
+.blue_icon_container{
+    align-self: flex-start;
+}
 
 
 /* ==============why choose us=============== */
 .choose_us_section .container{
     padding-block: 7.5rem;
+    column-gap: 8.125rem;
+    --columns: 2;
+    grid-template-columns: repeat(var(--columns),1fr);
+}
+.black_card_thunderbolt_container{
+    background-color: var(--black);
+}
+.choosing_us_reason_container{
+    column-gap: 1.5625rem;
+}
+.black_card_thunderbolt_container{
+    align-self: flex-start;
+}
+.choosing_us_reasons{
+    row-gap: 1.875rem;
+}
+.choose_us_section h2{
+    margin-bottom: 3.75rem;
+}
+.choose_us_section_left_heading{
+    margin-bottom: 1.25rem; 
+}
+.choose_us_section .container .sub-title{
+    margin-bottom: .625rem;
+}
+.choose_us_image_container img{
+    border-radius: .625rem;
+}
+.choose_us_section .customer_rating_container{
+    top: 10rem;
+    left: -3.75rem;
 }
 
+/* ============pricing plans=========== */
 
+.pricing_section .container{
+    margin-block: 7.5rem;
+}
+.pricing_section h2 p{
+    right: 0;
+    bottom: 0;
+}
+.pricing_section h2{
+    margin-bottom: 4rem;
+}
+.pricing_section_heading{
+    margin-bottom: .875rem;
+}
+
+.pricing_section_plan{
+    --columns:3;
+    grid-template-columns: repeat(var(--columns),1fr);
+    column-gap: 1.5rem;
+}
+.pircing_plan{
+    padding-block: 2.5rem;
+    padding-inline: 3.125rem;
+    border-radius: .625rem;
+}
+.pricing_section ul{
+    font-size: 1.125rem;
+    list-style-position: inside;
+}
+.pricing_plan_subheading{
+    margin-bottom: .875rem ;
+}
+.pricing_plan_heading{
+    margin-bottom: 1.5rem;
+}
+.pircing_plan p, .pricing_plan_subheading{
+    margin-block: 1.5rem;
+}
+.pricing_plain_title{
+    margin-bottom: .625rem;
+}
+.pircing_plan {
+    margin-bottom: 3rem;
+}
+.pricing_section .bg-primary .button{
+    color: black;
+}
+.pricing_section_divider{
+    height: 1px;
+    background-color: var(--border2);
+}
+.pircing_plan .button{
+    margin-top: 1.5rem;
+    text-align: center;
+}
