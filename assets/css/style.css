@@ -243,6 +243,9 @@ img{
 .bg-border1{
     background-color: var(--border1);
 }
+.bg-border2{
+    background-color: var(--border2);
+}
 .black-color{
     color: var(--black);
 }
@@ -298,6 +301,11 @@ img{
 }
 .gapx{
     column-gap: 3.125rem;
+}
+/* ===============border-radius============== */
+
+.border-radius{
+    border-radius: .625rem;
 }
 
 /* paragraph */
@@ -680,3 +688,49 @@ footer .footer_contact_us_section a{
     margin-top: 1.5rem;
     text-align: center;
 }
+/* ===========how it works========== */
+.how_it_works_heading{
+    margin-bottom: .875rem;
+}
+.how_it_works_title{
+    margin-bottom: 3.75rem;
+}
+.how_it_works .divider{
+    width: 18.125rem;
+    height: .0625rem;
+    top: 2.7rem;
+    left: -20rem;
+}
+.how_it_works .container .horizontal_card{
+    row-gap: 3.75rem;
+    --row:3;
+    grid-template-rows: repeat(var(--row),1fr);
+}
+.how_it_works .container .horizontal_card > .d-grid{
+    column-gap: 3.625rem;
+}
+.card_type_1, .card_type_2{
+    --columns: 2;
+    grid-template-columns: repeat(var(--columns),1fr);
+    align-items: center;
+    justify-items: ri;
+}
+.header_how_it_works{
+    justify-self: center;
+    width: 28.125rem;
+    height: 9.375rem;
+    margin-bottom: 3.75rem;
+}
+.how_it_works ul{
+    list-style-position: inside;
+    list-style-image: url(../images/corner-down-right.svg);
+}
+.how_it_works_sub_heading{
+    display: inline;
+}
+.how_it_works ul p{
+    display: inline;
+}
+
+
+
