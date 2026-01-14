@@ -390,17 +390,16 @@ header,.banner_section,.testimonial_section{
     background-color: var(--nav_bg);
     padding-block: 2.5rem ;
 }
-/* 
-Sticky header */
+
+/* Sticky header */
 .header {
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 10;
 }
 
 /* ====================footer section=================== */
 footer{
-    /* padding-block: var(--section_padding_block); */
     background-color: var(--primary_color);
 }
 
@@ -438,7 +437,11 @@ footer .footer_contact_us_section a{
 footer a:is(:hover,:active,:focus){
     color: var(--secondary_color);
 }
+footer .sub-flex{
+    column-gap: .875rem;
+}
 
+/* ====================Home Page==================== */
 
 /* ===============hero section============ */
 .banner_section .container{
@@ -845,6 +848,7 @@ footer a:is(:hover,:active,:focus){
 }
 
 /* =========== Get Started=========== */
+
 .get_started_and_get_in_touch .container{
     padding-block: 7.5rem;
     --columns:2;
@@ -906,8 +910,11 @@ footer a:is(:hover,:active,:focus){
     outline: .250rem solid var(--primary_color);
     color: var(--secondary_color);
 }
+.button:active{
+    outline-offset: .125rem;
+}
 .button{
-    transition: transform .2s linear;
+    transition: transform .3s linear;
 }
 
 
@@ -1046,14 +1053,24 @@ footer a:is(:hover,:active,:focus){
     grid-template-columns: repeat(var(--columns),1fr);
     column-gap: 1.875rem;
 }
+.our_team_container img{
+    border-radius: .625rem .625rem 0rem 0rem;
+}
 .team_content{
     margin: 1.125rem 1.875rem;
+}
+/* .instagram_icon_container{
+    bottom: 50%;
+} */
+.instagram_icon_container{
+    width: 2rem;
+    aspect-ratio: 1/1;bottom: 35%;
 }
 .our_team .sub-title{
     margin-bottom: .675rem;
 }
-.our_team .instagram_icon_container{
-    top: 50%;
+.our_team .instagram_icon_container a i:is(:hover,:focus,:active){
+    color: var(--primary_color);
 }
 .our_team_footer{
     width: 36.375rem;
@@ -1093,3 +1110,42 @@ footer a:is(:hover,:active,:focus){
     margin-top: 2rem;
 }
 
+
+/* ==================== CONTACT US ==================== */
+
+/* ===============faq=============== */
+
+.faq .container{
+    padding-block: 7.5rem;
+}
+.faq_header{
+    width: 30rem;
+}
+.faq_footer{
+    width: 36.375rem;
+}
+.faq_footer , .faq_header{
+    margin-left: 20.625rem;
+}
+.faq_content_wrapper{
+    margin-block: 5rem;
+    margin-inline: auto;
+    width: 50.125rem;
+}
+.faq .divider{
+    width: 18.125rem;
+    height: 0.0625rem;
+    top: 46%;
+    left: -68%;
+}
+.faq .faq_header .divider{
+    top: 46%;
+    left: -68%;
+}
+.faq .faq_footer .divider{
+    top: 46%;
+    left: -56%;
+}
+.faq .faq_footer:where(i,a):where(:hover,:focus,:active){
+    color: var(--primary_color);
+}
