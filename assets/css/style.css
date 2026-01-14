@@ -26,9 +26,8 @@
     --heading_weight: 700;
     
     /* section */
-    --container_width: 1140px;
-    --section_padding: 12.5rem 18.75rem ;
-    --section_width: 1140px ;
+    --container_width: 71.25rem;
+    --section_padding: 12.5rem 18.75rem;
     --container_padding_block: 9.375rem;
     
     
@@ -360,7 +359,7 @@ p{
 .thunderbold-card{
     padding-block: 2.1rem;
     padding-inline: 1.9375rem;
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 
 /* --------------------header section------------------- */
@@ -420,7 +419,7 @@ footer{
 }
 .footer_lower_section .container{
     justify-content: space-between;
-    border-top: 1px solid var(--border1);
+    border-top: .0625rem solid var(--border1);
     padding-block: 1.875rem 2.1875rem;
 }
 footer .container a,address,p,.footer_lower_section{
@@ -439,10 +438,7 @@ footer .footer_contact_us_section a{
 footer a:is(:hover,:active,:focus){
     color: var(--secondary_color);
 }
-/* .footer_work_hour_section p:not(.footer_section_heading){
-    margin-left: px;
 
-} */
 
 /* ===============hero section============ */
 .banner_section .container{
@@ -722,7 +718,7 @@ footer a:is(:hover,:active,:focus){
     color: black;
 }
 .pricing_section_divider{
-    height: 1px;
+    height: .0625rem;
     background-color: var(--border2);
 }
 .pircing_plan .button{
@@ -941,5 +937,159 @@ footer a:is(:hover,:active,:focus){
     padding-block: 5.625rem 7.5rem;
     --columns:2;
     grid-template-columns: repeat(var(--columns),1fr);
-    
+    column-gap: 9.75rem;
 }
+.get_mission_right .position-absolute{
+    left: -6rem;
+    top: 15rem;
+}
+.get_mission_right .title{
+    margin-bottom: .875rem;
+}
+.get_mission h2{
+    margin-bottom: 4.875rem;
+}
+.get_mission_left .get_mission_content{
+    padding-left: 5rem;
+}
+.get_mission .sub_heading{
+    margin-bottom: .625rem;
+}
+.get_mission_left .divider{
+    margin-block: 1.875rem;
+    height: .0625rem;
+}
+
+/* ===========Our Story=========== */
+
+.our_story .container{
+    padding-block: 7.5rem;
+}
+.our_story .play_icon{
+    width: 3.125rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+}
+.images_rows{
+    --columns:3;
+    grid-template-columns: repeat(var(--columns),1fr);
+    column-gap: 1.875rem;
+    margin-block: 3.75rem;
+}
+.our_story .video_box_text{
+    top: 1.875rem;
+    left: 2.5rem;
+    width: 7.5rem;
+}
+.our_story .our_story_header{
+    width: 30rem;
+    margin-inline: auto;
+}
+.our_story_heading{
+    margin-bottom: .875rem;
+}
+.our_story .divider{
+    width: 18.125rem;
+    height: .0625rem;
+    top: 50%;
+    left: -68%;
+}
+.our_story .our_story_footer{
+    --columns:2;
+    grid-template-columns: repeat(var(--columns),1fr);
+}
+.our_story_footer div:has(.button){
+    justify-self: end;
+}
+
+/* =============our value============= */
+
+.our_value .container{
+    margin-block: 7.5rem;
+}
+.our_value .title{
+    margin-bottom: .875rem;
+}
+.our_value h2{
+    margin-bottom: 3.75rem;
+    width: 29rem;
+}
+.our_value .divider{
+    height: .0625rem;
+    margin-block: 3.75rem;
+}
+.our_value_content_card{
+    --columns:3;
+    grid-template-columns: repeat(var(--columns),1fr);
+    justify-items: center;
+    column-gap: 6.25rem;
+}
+.our_value .secondary-color:is(:active,:hover,:focus){
+    color: var(--primary_color);
+}
+
+/* ============our team============ */
+
+.our_team .container{
+    padding-block: 7.5rem;
+}
+.our_team_header{
+    width: 30rem;
+    margin-inline: auto;
+}
+.our_team .title{
+    margin-bottom: .875rem;
+}
+.our_team_container{
+    margin-block: 3.75rem;
+    --columns: 3;
+    grid-template-columns: repeat(var(--columns),1fr);
+    column-gap: 1.875rem;
+}
+.team_content{
+    margin: 1.125rem 1.875rem;
+}
+.our_team .sub-title{
+    margin-bottom: .675rem;
+}
+.our_team .instagram_icon_container{
+    top: 50%;
+}
+.our_team_footer{
+    width: 36.375rem;
+    margin-inline: auto;
+}
+.our_team .button{
+    margin-top: 1.125rem;
+}
+.our_team .divider {
+    height: .0625rem;
+    width: 18.125rem;
+    top: 50%;
+    left: -68%;
+}
+.our_team_footer .divider{
+    width: 16rem;
+    top: 24%;
+    left: -47%;
+}
+
+/* ===========get started=========== */
+
+.get_started .container{
+    padding-block: 7.5rem;
+    --columns: 2;
+    grid-template-columns: repeat(var(--columns),1fr);
+    column-gap: 9.75rem;
+    align-items: center;
+}
+.get_started .title{
+    margin-bottom: .875rem;
+}
+.get_started .get_started_title{
+    margin-bottom: 1.5rem;
+}
+.get_started .button{
+    margin-top: 2rem;
+}
+

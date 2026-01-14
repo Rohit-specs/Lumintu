@@ -34,14 +34,17 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container d-flex align-center justify-between">
         <div class="header_logo">
           <a href="#"
             ><img
@@ -51,41 +54,35 @@
               aria-label="Lumintu logo"
           /></a>
         </div>
-        <nav class="header_navbar">
-          <ul type="None">
-            <li>
-              <a href="./index.html" title="click to go back to home page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="/about-us.html"
-                title="click here to go to about us page"
-                >About Us</a
-              >
-            </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Page</a></li>
-            <li>
-              <a
-                target="_blank"
-                href="/contact-us.html"
-                title="click here to go contact us page"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+        <nav class="header_navbar d-flex align-center gap10 justify-between">
+          <a href="./index.html" title="click to go back to home page">Home</a>
+
+          <a
+            target="_blank"
+            href="/about-us.html"
+            title="click here to go to about us page"
+            >About Us</a
+          >
+
+          <a href="#">Services</a>
+          <a href="#">Page</a>
+
+          <a
+            target="_blank"
+            href="/contact-us.html"
+            title="click here to go contact us page"
+            >Contact Us</a
+          >
+
+          <div><a class="button" href="#">Get Started</a></div>
         </nav>
-        <div class="button_container_1"><a href="#">Get Started</a></div>
       </div>
     </header>
 
     <main>
-      <section class="top_banner">
+      <section class="top_banner main-bg">
         <div class="container">
-          <h1>About Us</h1>
+          <h1 class="primary-color">About Us</h1>
           <p>
             Aliquet nec mauris tortor at sed erat. Ut faucibus habitant risus
             morbi quis egestas etiam lorem. Feugiat lorem aliquam eget mattis
@@ -95,47 +92,51 @@
       </section>
       <section class="about_us">
         <div class="container">
-          <div class="about_us_left">
-            <img
-              loading="lazy"
-              src="assets/images/about_us_section_img_1.jpg"
-              alt="a woman standing wearing red rain coat with red umberalla in his hand"
-            />
-            <img
-              loading="lazy"
-              src="assets/images/about_us_section_img_2.jpg"
-              alt="three toy car accident and a file first page heading shown as incurance policy"
-            />
-            <img
-              loading="lazy"
-              src="assets/images/about_us_section_img_3.jpg"
-              alt="four person two woman and two man standing and laughing"
-            />
-          </div>
-          <div class="about_us_right">
-            <div class="about_us_heading">ABOUT US</div>
-            <div class="about_us_title">
-              <h2>Innovation Insurance Solutions</h2>
+          <div class="container_top d-grid">
+            <div class="about_us_left d-grid">
+              <img
+                class="img1"
+                loading="lazy"
+                src="assets/images/about_us_section_img_1.jpg"
+                alt="a woman standing wearing red rain coat with red umberalla in his hand"
+              />
+              <img
+                class="img2"
+                loading="lazy"
+                src="assets/images/about_us_section_img_2.jpg"
+                alt="three toy car accident and a file first page heading shown as incurance policy"
+              />
+              <img
+                class="img3"
+                loading="lazy"
+                src="assets/images/about_us_section_img_3.jpg"
+                alt="four person two woman and two man standing and laughing"
+              />
             </div>
-            <div class="sub_heading"><h3>Our Vision</h3></div>
-            <div class="vision_content">
-              <p>
-                Aliquet nec mauris tortor at sed erat. Ut faucibus habitant
-                risus morbi quis egestas etiam lorem. Feugiat lorem aliquam eget
-                mattis cursus. Turpis massa arcu sagittis interdum. Integer
-                molestie.
-              </p>
-            </div>
-            <div class="button_container_1">
+            <div class="about_us_right">
+              <div class="about_us_heading title grey-color">ABOUT US</div>
+              <div class="about_us_title">
+                <h2>Innovation Insurance Solutions</h2>
+              </div>
+              <div class="sub_heading primary-color"><h3 class="sub-title">Our Vision</h3></div>
+              <div class="vision_content">
+                <p>
+                  Aliquet nec mauris tortor at sed erat. Ut faucibus habitant
+                  risus morbi quis egestas etiam lorem. Feugiat lorem aliquam
+                  eget mattis cursus. Turpis massa arcu sagittis interdum.
+                  Integer molestie.
+                </p>
+              </div>
               <a
                 href="#"
+                class="button"
                 aria-label="click here to learn more about driving insurance"
                 >Learn More</a
               >
             </div>
           </div>
           <div class="about_us_footer">
-            <div class="images_rows">
+            <div class="images_rows d-flex justify-between">
               <img
                 loading="lazy"
                 src="assets/images/Logo_Client_1.png"
@@ -156,48 +157,66 @@
                 src="assets/images/Logo_Client_4.png"
                 alt="client logo 4"
               />
+              <img
+                loading="lazy"
+                src="assets/images/Logo_Client_5.png"
+                alt="client logo 5"
+              />
             </div>
           </div>
         </div>
       </section>
       <section class="get_mission">
-        <div class="container">
+        <div class="container d-grid">
           <div class="get_mission_left">
-            <div class="get_mission_heading">OUR MISSION</div>
+            <div class="get_mission_heading title grey2-color">OUR MISSION</div>
             <div class="get_mission_title">
               <h2>Making a Difference with Lumintu</h2>
             </div>
-            <ul type="None">
-              <li>
-                <div class="sub_heading">Customer-Centric Focus</div>
+            <div class="d-flex position-relative flex-column">
+              <div class="get_mission_content">
+                <p class="sub-title primary-color position-absolute left">01</p>
+                <div class="sub_heading sub-title primary-color inline">
+                  Customer-Centric Focus
+                </div>
                 <p>
                   Molestie ornare mi lorem ornare dapibus nibh dictum. Morbi
                   risus et tristique
                 </p>
-              </li>
-              <li>
-                <div class="sub_heading">Commitment to Integrity</div>
+              </div>
+              <div class="divider w-100 bg-border1"></div>
+              <div class="get_mission_content">
+                <p class="sub-title primary-color position-absolute left">02</p>
+                <div class="sub_heading sub-title primary-color inline">
+                  Commitment to Integrity
+                </div>
                 <p>
                   Molestie ornare mi lorem ornare dapibus nibh dictum. Morbi
                   risus et tristique.
                 </p>
-              </li>
-              <li>
-                <div class="sub_heading">Innovation and Adaptability</div>
+              </div>
+              <div class="divider w-100 bg-border1"></div>
+              <div class="get_mission_content">
+                <p class="sub-title primary-color position-absolute left">03</p>
+                <div class="sub_heading sub-title primary-color inline">
+                  Innovation and Adaptability
+                </div>
                 <p>
                   Molestie ornare mi lorem ornare dapibus nibh dictum. Morbi
                   risus et tristique.
                 </p>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="get_mission_right">
+          <div class="get_mission_right position-relative">
             <img
+              class="border-radius"
               loading="lazy"
               src="assets/images/our_mission_img_1.png"
               alt="one person spreading small black umbrealla "
             />
             <img
+              class="position-absolute border-radius"
               loading="lazy"
               src="assets/images/our_mission_img_2.png"
               alt="a happy family of 6 members standing together"
@@ -205,19 +224,30 @@
           </div>
         </div>
       </section>
-      <section class="our_story">
+      <section class="our_story bg-primary">
         <div class="container">
-          <div class="our_story_heading">OUR STORY</div>
-          <div class="our_story_title">Our Story of Innovation and Trust</div>
-          <div class="images_rows">
-            <div class="video_box_1">
-              <p class="video_box_text_1">Founding Vision</p>
+          <div class="our_story_header position-relative">
+            <div class="our_story_heading title border1">OUR STORY</div>
+            <div class="our_story_title h2 white-color">
+              Our Story of Innovation and Trust
+            </div>
+            <div class="divider position-absolute bg-border2"></div>
+          </div>
+
+          <div class="images_rows d-grid justify-between">
+            <div class="video_box position-relative">
+              <p class="video_box_text position-absolute white-color body-text">
+                Founding Vision
+              </p>
               <img
                 loading="lazy"
                 src="assets/images/our_story_img_1.png"
+                class="border-radius"
                 alt="three small house models on table and a person standing and holding a pen in hand explaining something to other person"
               />
-              <div class="play_icon">
+              <div
+                class="play_icon position-absolute d-flex flex-center round-img bg-secondary"
+              >
                 <img
                   src="assets/images/Play_icon.svg"
                   alt="this is a play icon"
@@ -225,14 +255,19 @@
                 />
               </div>
             </div>
-            <div class="video_box_2">
-              <p class="video_box_text_2">Journey of Growth</p>
+            <div class="video_box position-relative">
+              <p class="video_box_text position-absolute white-color body-text">
+                Journey of Growth
+              </p>
               <img
                 loading="lazy"
                 src="assets/images/our_story_img_2.png"
+                class="border-radius"
                 alt="a person protecting or covering small house model"
               />
-              <div class="play_icon">
+              <div
+                class="play_icon position-absolute d-flex flex-center round-img bg-secondary"
+              >
                 <img
                   src="assets/images/Play_icon.svg"
                   alt="this is a play icon"
@@ -240,14 +275,19 @@
                 />
               </div>
             </div>
-            <div class="video_box_3">
-              <p class="video_box_text_3">Adaptation to Change</p>
+            <div class="video_box position-relative">
+              <p class="video_box_text position-absolute white-color body-text">
+                Adaptation to Change
+              </p>
               <img
                 loading="lazy"
                 src="assets/images/our_story_img_3.png"
+                class="border-radius"
                 alt="a person holding small blue while house model in his palm"
               />
-              <div class="play_icon">
+              <div
+                class="play_icon position-absolute d-flex flex-center round-img bg-secondary"
+              >
                 <img
                   src="assets/images/Play_icon.svg"
                   alt="this is a play icon"
@@ -256,7 +296,7 @@
               </div>
             </div>
           </div>
-          <div class="our_story_footer">
+          <div class="our_story_footer d-grid">
             <div class="our_story_footer_left">
               <p>
                 Aliquet nec mauris tortor at sed erat. Ut faucibus habitant
@@ -265,25 +305,22 @@
                 molestie.
               </p>
             </div>
-            <div class="our_story_footer_right">
-              <div class="button_container_1">
-                <a href="#">Get Started</a>
-              </div>
-            </div>
+            <div><a class="button" href="#">Get Started</a></div>
           </div>
         </div>
       </section>
       <section class="our_value">
         <div class="container">
-          <div class="our_value_heading">OUR VALUE</div>
+          <div class="our_value_heading title grey2-color">OUR VALUE</div>
           <div class="our_value_title">
             <h2>Driving Insurance with Integrity</h2>
           </div>
           <div class="our_value_content">
-            <div class="our_value_content_card">
-              <div class="sub_heading">Integrity</div>
+            <div class="our_value_content_card d-grid">
+              <div class="sub_heading sub-title primary-color">Integrity</div>
               <div class="our_value_img_container">
                 <img
+                  class="border-radius"
                   loading="lazy"
                   src="assets/images/our_value_section_img_1.png"
                   alt="person explaining about home loan with copy in hand and house model on table"
@@ -299,15 +336,18 @@
                 </p>
                 <a
                   href="#"
+                  class="secondary-color"
                   aria-label="click here to learn more about driving insurance"
                   >Learn More</a
                 >
               </div>
             </div>
-            <div class="our_value_content_card">
-              <div class="sub_heading">Innovation</div>
+            <div class="divider w-100 bg-border2"></div>
+            <div class="our_value_content_card d-grid">
+              <div class="sub_heading sub-title primary-color">Innovation</div>
               <div class="our_value_img_container">
                 <img
+                  class="border-radius"
                   loading="lazy"
                   src="assets/images/our_value_section_img_2.png"
                   alt="a person with having pen in one hand and small house model in another hand explaining something"
@@ -323,21 +363,24 @@
                 </p>
                 <a
                   href="#"
+                  class="secondary-color"
                   aria-label="click here to learn more about driving insurance"
                   >Learn More</a
-                >
+                  >
+                </div>
               </div>
-            </div>
-            <div class="our_value_content_card">
-              <div class="sub_heading">Reliability</div>
+              <div class="divider w-100 bg-border2"></div>
+            <div class="our_value_content_card d-grid">
+              <div class="sub_heading sub-title primary-color">Reliability</div>
               <div class="our_value_img_container">
                 <img
+                class="border-radius"
                   loading="lazy"
                   src="assets/images/our_value_section_img_3.png"
                   alt="a statue of blind law on table with wooden hammer next to a person"
                 />
               </div>
-
+              
               <div class="our_value_content_container">
                 <p>
                   Aliquet nec mauris tortor at sed erat. Ut faucibus habitant
@@ -347,6 +390,7 @@
                 </p>
                 <a
                   href="#"
+                  class="secondary-color"
                   aria-label="click here to learn more about driving insurance"
                   >Learn More</a
                 >
@@ -356,43 +400,45 @@
         </div>
       </section>
 
-      <section class="our_team">
+      <section class="our_team main-bg">
         <div class="container">
-          <header>
-            <div class="our_team_heading">OUR TEAM</div>
-            <div class="our_team_title">Meet Our Talent Team Members</div>
-          </header>
-          <section class="our_team_container">
-            <article>
+          <div class="our_team_header position-relative">
+            <div class="our_team_heading title grey2-color">OUR TEAM</div>
+            <div class="divider bg-border2 position-absolute"></div>
+            <div class="our_team_title h2">Meet Our Talent Team Members</div>
+          </div>
+          <section class="our_team_container d-grid">
+            <article class="white-bg border-radius">
               <div class="our_team_section_img_container">
                 <img
                   loading="lazy"
                   src="assets/images/team_member_img_1.jpg"
                   alt="image of founder & ceo"
                   aria-label="image of founder & ceo"
-                  
                 />
               </div>
-              <div class="team_member_name">
-                <h3>Jane Doe</h3>
+              <div class="team_content position-relative">
+                <div class="team_member_name">
+                <h3 class="sub-title">Jane Doe</h3>
               </div>
-              <div class="team_member_role"><p>Founder & CEO</p></div>
-              <div class="instagram_icon_container">
+              <div class="team_member_role"><p class="body-text grey-color">Founder & CEO</p></div>
+              <div class="instagram_icon_container position-absolute">
                 <a
-                  href="#"
-                  rel="nofollow"
+                href="#"
+                rel="nofollow"
                   target="_blank"
                   aria-label="click here to open instagram"
-                >
+                  >
                   <i
-                    class="fa-brands fa-instagram"
+                    class="fa-brands fa-instagram secondary-color"
                     aria-label="instagram icon"
                   ></i>
                 </a>
-              </div>
+              </div></div>
+              
             </article>
 
-            <article>
+            <article class="white-bg border-radius">
               <div class="our_team_section_img_container">
                 <img
                   loading="lazy"
@@ -401,12 +447,12 @@
                   aria-label="image of cfo"
                 />
               </div>
-              <div class="team_content">
+              <div class="team_content position-relative">
                 <div class="team_member_name">
-                  <h3>Emily Brown</h3>
+                  <h3 class="sub-title">Emily Brown</h3>
                 </div>
-                <div class="team_member_role"><p>CCO</p></div>
-                <div class="instagram_icon_container">
+                <div class="team_member_role"><p class="body-text grey-color">CCO</p></div>
+                <div class="instagram_icon_container position-absolute">
                   <a
                     href="#"
                     rel="nofollow"
@@ -414,14 +460,14 @@
                     aria-label="click here to open instagram"
                   >
                     <i
-                      class="fa-brands fa-instagram"
+                      class="fa-brands fa-instagram secondary-color"
                       aria-label="instagram icon"
                     ></i>
                   </a>
                 </div>
               </div>
             </article>
-            <article>
+            <article class="white-bg border-radius">
               <div class="our_team_section_img_container">
                 <img
                   loading="lazy"
@@ -430,12 +476,12 @@
                   aria-label="image of cfo"
                 />
               </div>
-              <div class="team_content">
+              <div class="team_content position-relative">
                 <div class="team_member_name">
-                  <h3>John Smith</h3>
+                  <h3 class="sub-title">John Smith</h3>
                 </div>
-                <div class="team_member_role"><p>CFO</p></div>
-                <div class="instagram_icon_container">
+                <div class="team_member_role"><p class="body-text grey-color">CFO</p></div>
+                <div class="instagram_icon_container position-absolute right">
                   <a
                     href="#"
                     rel="nofollow"
@@ -443,7 +489,7 @@
                     aria-label="click here to open instagram"
                   >
                     <i
-                      class="fa-brands fa-instagram"
+                      class="fa-brands fa-instagram secondary-color"
                       aria-label="instagram icon"
                     ></i>
                   </a>
@@ -451,42 +497,40 @@
               </div>
             </article>
           </section>
-          <div class="our_team_footer">
-            <p>
+          <div class="our_team_footer position-relative">
+            <p class="">
               Aliquet nec mauris tortor at sed erat. Ut faucibus habitant risus
               morbi quis egestas etiam lorem. Feugiat lorem aliquam eget mattis
               cursus. Turpis massa arcu sagittis interdum. Integer molestie.
             </p>
-            <div class="button_container_1">
-              <a href="#">Join Our team</a>
-            </div>
+            <div class="divider bg-border2 position-absolute"></div>
+              <a class="button" href="#">Join Our team</a>
           </div>
         </div>
       </section>
       <section class="get_started">
-        <div class="container">
+        <div class="container d-grid">
           <div class="get_started_left">
             <div class="get_started_img_conatiner">
               <img
                 loading="lazy"
+                class=" border-radius"
                 src="assets/images/get_started_img.jpg"
                 alt="two person holding same small house model using one hand each"
               />
             </div>
           </div>
           <div class="get_started_right">
-            <div class="get_started_heading">GET STARTED</div>
+            <div class="get_started_heading title grey2-color">GET STARTED</div>
             <div class="get_started_title">
               <h2>Get Started with Lumintu Insurance</h2>
             </div>
-            <p>
+            <p class="body-text grey-color">
               Aliquet nec mauris tortor at sed erat. Ut faucibus habitant risus
               morbi quis egestas etiam lorem. Feugiat lorem aliquam eget mattis
               cursus. Turpis massa arcu sagittis interdum. Integer molestie.
             </p>
-            <div class="button_container_1">
-              <a href="#">Get Started</a>
-            </div>
+              <a class="button" href="#">Get Started</a>
           </div>
         </div>
       </section>
@@ -494,11 +538,11 @@
 
     <footer>
       <section class="footer_top_section">
-        <div class="container">
+        <div class="container d-grid">
           <div class="footer_contact_us_section">
             <img
               loading="lazy"
-              src="assets/images/Lumintu_Logo.svg"
+              src="assets/images/white_lumintu_logo.png"
               alt="This is lumintu logo"
               aria-label="Lumintu logo"
             />
@@ -512,52 +556,50 @@
               >+123 456 789</a
             >
           </div>
-          <div class="footer_company_section">
+          <div class="footer_company_section d-grid">
             <p class="footer_section_heading">Company</p>
-            <ul type="None">
-              <li><a href="/index.html">Home</a></li>
-              <li><a target="_blank" href="/about-us.html">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Events</a></li>
-            </ul>
-          </div>
-          <div class="footer_help_section">
-            <p class="footer_section_heading">Help</p>
-            <ul type="None">
-              <li><a href="#">Customer Support</a></li>
-              <li><a href="#">How It Works</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="footer_work_hour_section">
-            <ul type="None">
-              <li>
-                <i class="fa-regular fa-clock" aria-label="clock icon"></i>
-                <p>9 AM - 5 PM, Monday - Saturday</p>
-              </li>
 
-              <li>
-                <i
-                  class="fa-regular fa-paper-plane"
-                  aria-label="paper plane icon"
-                ></i>
-                <a href="mailto:support@kaliber.com">support@kaliber.com</a>
-              </li>
-              <li>
-                <i
-                  class="fa-solid fa-location-dot"
-                  aria-label="location icon"
-                ></i>
-                <address>Jl. Menuju Roma No.01, Lewat Jalur Udara.</address>
-              </li>
-            </ul>
+            <a href="/index.html">Home</a>
+            <a target="_blank" href="/about-us.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Events</a>
+          </div>
+          <div class="footer_help_section d-grid">
+            <p class="footer_section_heading">Help</p>
+
+            <a href="#">Customer Support</a>
+            <a href="#">How It Works</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="footer_work_hour_section d-grid">
+            <p class="footer_section_heading">Work Hours</p>
+            <div class="">
+              <i class="fa-regular fa-clock" aria-label="clock icon"></i>
+              <p>9 AM - 5 PM, Monday - Saturday</p>
+            </div>
+            <div class="">
+              <i
+                class="fa-regular fa-paper-plane"
+                aria-label="paper plane icon"
+              ></i>
+              <a href="mailto:support@kaliber.com"> support@kaliber.com</a>
+            </div>
+            <div class="">
+              <i
+                class="fa-solid fa-location-dot"
+                aria-label="location icon"
+              ></i>
+              <address>Jl. Menuju Roma No.01, Lewat Jalur Udara.</address>
+            </div>
           </div>
         </div>
       </section>
       <section class="footer_lower_section">
-        <div class="lower_footer_left_text">Copyright © 2023 Kaliber</div>
-        <div class="lower_footer_right_text">Designed by TokoTema</div>
+        <section class="container d-flex">
+          <div class="lower_footer_left_text">Copyright © 2023 Kaliber</div>
+          <div class="lower_footer_right_text">Designed by TokoTema</div>
+        </section>
       </section>
     </footer>
   </body>
