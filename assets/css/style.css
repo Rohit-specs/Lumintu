@@ -210,7 +210,8 @@ img{
 }
 
 .container{
-    width: var(--container_width);
+    width: 100%;
+    max-width: var(--container_width);
     margin-inline: auto;
 }
 
@@ -395,8 +396,9 @@ header,.banner_section,.testimonial_section{
 .header .position-absolute{
     color: var(--primary_color);
     left: -60%;
-    font-size: 1.75rem;
+    font-size: 2rem;
     border-radius: .125rem;
+    cursor: pointer;
 }
 .header .position-absolute:where(i,a):where(:hover,:focus,:active){
     outline: .250rem solid var(--secondary_color);
@@ -405,7 +407,9 @@ header,.banner_section,.testimonial_section{
     outline-offset: .250rem;
     
 }
-
+.header .position-absolute{
+        display: none;
+    }
 
 
 /* Sticky header */
@@ -416,35 +420,32 @@ header,.banner_section,.testimonial_section{
 }
 
 /* ===========Responsive header=========== */
-@media (min-width:973px){
-    .header .position-absolute{
-        display: none;
-    }
-}
+
 @media (max-width: 972px){
-    html{
-        font-size: 10px;
-    }   
-    nav>*{
+    .header_navbar>a:not(.button){
         display: none;
     }
-    .header-navbar i{
+    .header_navbar .fa-bars{
         display: block;
+        position: absolute;
+        right: 0;
+        font-size: 2rem;
+        cursor: pointer;
     }
-    .header-navbar >:last-child{
-        display: block;
+    .header{
+        padding-block: 1.5rem;
     }
 }
 @media (max-width: 575px){
-    /* nav>*{
-        display: none;
-    }
-     .header-navbar i{
-        display: block;
-    }
-    .header-navbar >:last-child{
-        display: block;
+    /* .header .container{
+        align-items: center;
     } */
+    .header_navbar .fa-bars{
+        font-size: 2.2rem;
+    }
+    .header_navbar .button{
+        padding: 0.75rem 1.25rem;
+    }
 }
 
 
@@ -492,6 +493,53 @@ footer a:is(:hover,:active,:focus){
 }
 footer .sub-flex{
     column-gap: .875rem;
+}
+/* ================Responsive footer================ */
+
+@media (max-width: 972px){
+
+    .footer_top_section .container{
+        --columns: 2;
+        justify-items: start;
+        row-gap: 3rem;
+        padding-inline: 2rem;
+    }
+
+    footer :is(.footer_contact_us_section,.footer_company_section,.footer_help_section,.footer_work_hour_section)
+    {  width: 100%;
+    }
+
+    .footer_lower_section .container{
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px){
+
+    .footer_top_section .container{
+        --columns: 1;
+        justify-items: center;
+        text-align: center;
+    }
+
+    footer .sub-flex{
+        justify-content: center;
+    }
+
+    .footer_contact_us_section img{
+        margin-inline: auto;
+    }
+
+    .footer_company_section a,
+    .footer_help_section a{
+        display: block;
+    }
+
+    .footer_lower_section .container{
+        padding-block: 1.25rem;
+    }
 }
 
 
