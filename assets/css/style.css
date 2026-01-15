@@ -26,6 +26,7 @@
     --heading_weight: 700;
     
     /* section */
+
     --container_width: 71.25rem;
     --section_padding: 12.5rem 18.75rem;
     --container_padding_block: 9.375rem;
@@ -211,7 +212,6 @@ img{
 .container{
     width: var(--container_width);
     margin-inline: auto;
-    /* padding-block: var(--section_padding_block); */
 }
 
 /* Positions */
@@ -239,6 +239,7 @@ img{
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
+
 /* color classes*/
 .primary-color{
     color: var(--primary_color);
@@ -329,7 +330,7 @@ img{
 .gapx{
     column-gap: 3.125rem;
 }
-/* ===============border-radius============== */
+/* border-radius */
 
 .border-radius{
     border-radius: .625rem;
@@ -389,7 +390,23 @@ header,.banner_section,.testimonial_section{
 .header {
     background-color: var(--nav_bg);
     padding-block: 2.5rem ;
+    /* justify-content: space-between; */
 }
+.header .position-absolute{
+    color: var(--primary_color);
+    left: -60%;
+    font-size: 1.75rem;
+    border-radius: .125rem;
+}
+.header .position-absolute:where(i,a):where(:hover,:focus,:active){
+    outline: .250rem solid var(--secondary_color);
+}
+.header .position-absolute:where(i,a):where(:active){
+    outline-offset: .250rem;
+    
+}
+
+
 
 /* Sticky header */
 .header {
@@ -397,6 +414,42 @@ header,.banner_section,.testimonial_section{
     top: 0;
     z-index: 10;
 }
+
+/* ===========Responsive header=========== */
+@media (min-width:973px){
+    .header .position-absolute{
+        display: none;
+    }
+}
+@media (max-width: 972px){
+    html{
+        font-size: 10px;
+    }   
+    nav>*{
+        display: none;
+    }
+    .header-navbar i{
+        display: block;
+    }
+    .header-navbar >:last-child{
+        display: block;
+    }
+}
+@media (max-width: 575px){
+    /* nav>*{
+        display: none;
+    }
+     .header-navbar i{
+        display: block;
+    }
+    .header-navbar >:last-child{
+        display: block;
+    } */
+}
+
+
+
+
 
 /* ====================footer section=================== */
 footer{
@@ -440,6 +493,7 @@ footer a:is(:hover,:active,:focus){
 footer .sub-flex{
     column-gap: .875rem;
 }
+
 
 /* ====================Home Page==================== */
 
@@ -505,6 +559,12 @@ footer .sub-flex{
     right: 12.875rem;
     column-gap: .5rem;
 }
+.customer_star_rating img{
+    width: 1.375rem;
+}
+.customer_img_container{
+    width: 3.75rem;
+}
 .banner_section .background-image{
     background-color: var(--secondary_color);
     border-radius: .625rem .625rem 0rem 0rem ;
@@ -529,6 +589,19 @@ footer .sub-flex{
 .help-play-video a:is(:hover,:active,:focus){
     color: var(--primary_color);
 }
+
+/* @media (max-width: 972px){
+    .banner_section .container{
+    --columns: 1;
+
+}
+}
+@media (max-width: 575px){
+    
+} */
+
+
+
 /* ============fun facts=========== */
 .fun_facts{
     background-color: var(--primary_color);
@@ -613,6 +686,7 @@ footer .sub-flex{
 }
 .blue_icon_container{
     background-color: var(--primary_color);
+    align-self: flex-start;
 }
 .our_services_section_title p{
     right: 0;
@@ -627,8 +701,8 @@ footer .sub-flex{
 .text_content_container h3{
     margin-bottom: .625rem;
 }
-.blue_icon_container{
-    align-self: flex-start;
+.blue_icon_container img{
+    width: 1.5rem;
 }
 .our_services_section_title a:is(:hover,:active,:focus){
     color: var(--primary_color);
@@ -735,7 +809,9 @@ footer .sub-flex{
 .pricing_section_header a:is(:hover,:active,:focus){
     color: var(--primary_color);
 }
+
 /* ===========how it works========== */
+
 .how_it_works_heading{
     margin-bottom: .875rem;
 }
@@ -806,6 +882,7 @@ footer .sub-flex{
 }
 .how_it_works .button{
     top: 5rem;
+    margin-top: 1.25rem;
 }
 .how_it_works .last_paragraph .divider{
     width: 16.250rem;
