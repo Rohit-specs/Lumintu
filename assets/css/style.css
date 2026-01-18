@@ -377,7 +377,7 @@ p{
         padding-inline: .875rem;
     }
 }
-@media (max-width:572px){
+@media (max-width:575px){
     .container{
         padding-inline: .5rem;
     }
@@ -769,7 +769,7 @@ footer .sub-flex{
     justify-content: center;
     gap: 4rem;
 }
-.divider{
+.fun_facts .divider{
   display: none; 
 }
 
@@ -1416,8 +1416,29 @@ footer .sub-flex{
     padding-bottom: 1.25rem;
 }
 .top_banner p{
-    width: 36.375rem;
+    max-width: 36.375rem;
     margin: 0 auto;
+}
+
+/* Responsive top banner */
+
+@media(max-width: 972px){
+    .top_banner h1{
+        padding-bottom: 1.125rem;
+    }
+    .top_banner .container{
+        padding-block: 5rem 7rem;
+    }
+    
+}
+@media(max-width: 575px){
+    .top_banner h1{
+        padding-bottom: 1rem;
+    }
+    .top_banner .container{
+        padding-block: 3.5rem 5.2rem;
+    }
+
 }
 
 
@@ -1450,6 +1471,52 @@ footer .sub-flex{
     height: .0625rem;
 }
 
+/* Responsive get mission section */
+
+@media(max-width: 972px){
+    .get_mission .container{
+        padding-block: 5rem 7rem;
+        --columns:1;
+        row-gap: 4rem;
+    }
+    .get_mission_left .divider{
+        margin-block: 1.5rem;
+    }
+    
+    
+    .get_mission h2{
+        margin-bottom: 4rem;
+    }
+    .get_mission_right{
+        justify-self: right;
+    }
+    
+    
+}
+@media(max-width: 575px){
+    .get_mission .container{
+        padding-block: 3.5rem 5rem;
+        --columns:1;
+        row-gap: 2rem;
+    }
+    .get_mission_left .divider{
+        margin-block: 1.25rem;
+    }
+    .get_mission h2{
+        margin-bottom: 2.8rem;
+    }
+    .get_mission_right .position-absolute{
+        position: static;
+        margin-inline: auto;
+    }
+    .get_mission_right{
+        justify-self: center;
+    }
+    .get_mission_heading,.get_mission_title{
+        text-align: center;
+    }
+}
+
 /* ===========Our Story=========== */
 
 .our_story .container{
@@ -1461,18 +1528,23 @@ footer .sub-flex{
     bottom: 1.25rem;
 }
 .images_rows{
-    --columns:3;
-    grid-template-columns: repeat(var(--columns),1fr);
-    column-gap: 1.875rem;
+    /* --columns:3;
+    grid-template-columns: repeat(var(--columns),1fr); */
+    gap: 1.875rem;
     margin-block: 3.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .our_story .video_box_text{
     top: 1.875rem;
     left: 2.5rem;
     width: 7.5rem;
 }
+.video_box{
+    max-width: 20rem;
+}
 .our_story .our_story_header{
-    width: 30rem;
+    max-width: 30rem;
     margin-inline: auto;
 }
 .our_story_heading{
@@ -1492,10 +1564,54 @@ footer .sub-flex{
     justify-self: end;
 }
 
+/* Responsive Our story section */
+
+@media(max-width: 972px){
+   .our_story .container{
+    padding-block: 5rem;
+}
+.images_rows{
+    
+    gap: 1.5rem;
+    margin-block: 3.125rem;
+    
+}
+.our_story .divider{
+    display: none;
+}
+.our_story_heading{
+    margin-bottom: .675rem;
+}
+}
+@media(max-width: 575px){
+   
+       .our_story .container{
+        padding-block: 3.5rem;
+    }
+    .images_rows{
+        
+        gap: 1.125rem;
+        margin-block: 3.125rem;
+        
+    }
+
+    .our_story_heading{
+        margin-bottom: .5rem;
+    }
+    .our_story .our_story_footer{
+        --columns:1;
+        text-align: center;
+    }
+    .our_story_footer div:has(.button){
+        justify-self: center;margin-top: 1rem;
+    }
+    .our_story_header{text-align: center;
+}
+}
 /* =============our value============= */
 
 .our_value .container{
-    margin-block: 7.5rem;
+    padding-block: 7.5rem;
 }
 .our_value .title{
     margin-bottom: .875rem;
@@ -1518,13 +1634,67 @@ footer .sub-flex{
     color: var(--primary_color);
 }
 
+/* Responsive Our value section */
+
+@media(max-width: 972px){
+    .our_value_content_card{
+        --columns:2;
+        justify-content: center;
+        column-gap: 5rem;
+        row-gap: 3rem;
+    }
+    .our_value .container{
+        padding-block: 5rem;
+    }
+    .our_value .title{
+        margin-bottom: .75rem;
+    }
+    .our_value h2{
+        margin-bottom: 3rem;
+        max-width: 29rem;
+    }
+    .our_value_content_container{
+        grid-column: 1/-1;
+        max-width: 40rem;
+    }
+    .our_value .divider{
+    margin-block: 3rem;
+}
+}
+@media(max-width: 575px){
+    .our_value_content_card{
+        --columns:1;
+        justify-content: center;
+        column-gap: 5rem;
+        row-gap: 3rem;
+        text-align: center;
+    }
+    .our_value .divider{
+    margin-block: 2.2rem;
+    }
+    .our_value .container{
+        padding-block: 3.5rem;
+    }
+    .our_value .title{
+        margin-bottom: .625rem;
+        text-align: center;
+    }
+    .our_value h2{
+        margin-bottom: 2.2rem;
+        width: 29rem;
+        text-align: center;
+        margin-inline: auto;
+    }
+    
+}
+
 /* ============our team============ */
 
 .our_team .container{
     padding-block: 7.5rem;
 }
 .our_team_header{
-    width: 30rem;
+    max-width: 30rem;
     margin-inline: auto;
 }
 .our_team .title{
@@ -1532,9 +1702,14 @@ footer .sub-flex{
 }
 .our_team_container{
     margin-block: 3.75rem;
-    --columns: 3;
-    grid-template-columns: repeat(var(--columns),1fr);
-    column-gap: 1.875rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    justify-content: center;
+}
+.our_team_container > *{
+  max-width: 20rem;
+  width: 100%;
 }
 .our_team_container img{
     border-radius: .625rem .625rem 0rem 0rem;
@@ -1542,9 +1717,6 @@ footer .sub-flex{
 .team_content{
     margin: 1.125rem 1.875rem;
 }
-/* .instagram_icon_container{
-    bottom: 50%;
-} */
 .instagram_icon_container{
     width: 2rem;
     aspect-ratio: 1/1;bottom: 35%;
@@ -1556,7 +1728,7 @@ footer .sub-flex{
     color: var(--primary_color);
 }
 .our_team_footer{
-    width: 36.375rem;
+    max-width: 36.375rem;
     margin-inline: auto;
 }
 .our_team .button{
@@ -1572,6 +1744,56 @@ footer .sub-flex{
     width: 16rem;
     top: 24%;
     left: -47%;
+}
+
+/* Responsive Our value section */
+
+@media(max-width: 972px){
+  .our_team .divider{
+        display: none;
+    }
+    .our_team .container{
+    padding-block: 7.5rem;}
+
+.our_team .title{
+    margin-bottom: .875rem;
+}
+.our_team_container{
+    margin-block: 3rem;
+    gap: 1.3rem;
+}
+
+.team_content{
+    margin: 1rem 1.65rem;
+}
+.our_team .sub-title{
+    margin-bottom: .5rem;
+}
+.our_team_header{
+    text-align: center;
+}
+
+}
+
+@media(max-width: 575px){
+    .our_team .button{
+        margin-top: 1rem;
+    }
+    .our_team_footer{
+        max-width: 36.375rem;
+        margin-inline: auto;
+        text-align: center;
+    }
+    .our_team .sub-title{
+    margin-bottom: .35rem;
+}.our_team_container{
+    margin-block: 2.5rem;
+
+    gap: 1rem;
+}.team_content{
+    margin: .875rem 1.5rem;
+}
+  
 }
 
 /* ===========get started=========== */
@@ -1591,6 +1813,18 @@ footer .sub-flex{
 }
 .get_started .button{
     margin-top: 2rem;
+}
+
+/* Responsive Our value section */
+
+@media(max-width: 972px){
+
+
+}
+
+@media(max-width: 575px){
+
+  
 }
 
 
