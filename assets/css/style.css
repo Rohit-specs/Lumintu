@@ -1819,11 +1819,41 @@ footer .sub-flex{
 
 @media(max-width: 972px){
 
-
+.get_started .container{
+    padding-block: 5rem;
+    --columns: 2;
+    gap:1.5rem;
+    justify-content: center;
+    justify-items: center;
+}
+.get_started .title{
+    margin-bottom: .5rem;
+}
+.get_started .get_started_title{
+    margin-bottom: 1.125rem;
+}
+.get_started .button{
+    margin-top: 1.5rem;
+}
 }
 
 @media(max-width: 575px){
-
+.get_started .container{
+    padding-block: 3.5rem;
+    --columns: 1;
+    gap:.875rem;
+    text-align: center;
+  
+}
+.get_started .title{
+    margin-bottom: .5rem;
+}
+.get_started .get_started_title{
+    margin-bottom: .875rem;
+}
+.get_started .button{
+    margin-top: 1.125rem;
+}
   
 }
 
