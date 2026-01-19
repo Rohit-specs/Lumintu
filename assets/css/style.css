@@ -1389,6 +1389,8 @@ footer .sub-flex{
     display: none;
 }
 
+.card_img_wrapper{order: 1;}
+
 }
 @media(max-width: 575px){
     .how_it_works .header_how_it_works{
