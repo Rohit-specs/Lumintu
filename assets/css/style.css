@@ -370,15 +370,64 @@ p{
     border-radius: .3125rem;
 }
 /* Responsive container */
-@media (max-width:972px){
+@media (max-width:1150px){
     .container{
-        padding-inline: .875rem;
+        padding-inline: var(--tablet_container_padding);
     }
+    h1,h2{
+    font-size: 3.125rem;
+}
+.h1,.h2{
+    font-size: 3.125rem;
+}
+h2{
+    font-size: 2.625rem;
+}
+.h2{
+    font-size: 2.625rem;
+}
+h3{
+    font-size: 1.625rem;
+    letter-spacing: -2%;
+    line-height: var(--line_height);
+}
+.h3{
+    font-size: 1.625rem;
+    letter-spacing: -2%;
+    line-height: var(--line_height);
+}
 }
 @media (max-width:575px){
     .container{
-        padding-inline: .5rem;
+        padding-inline: var(--mobile_container_padding);
     }
+    h1,h2{
+    font-size: 2.875rem;
+}
+.h1,.h2{
+    font-size: 2.875rem;
+}
+h2{
+    font-size: 2.25rem;
+}
+.h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 1.5rem;
+    letter-spacing: -2%;
+    line-height: var(--line_height);
+}
+.h3{
+    font-size: 1.5rem;
+    letter-spacing: -2%;
+    line-height: var(--line_height);
+}
+
+main .container{
+    padding-block:2.5rem;
+}
+    
 }
 /* --------------------header section------------------- */
 
@@ -461,16 +510,7 @@ header,.banner_section,.testimonial_section{
         padding: 0.75rem 1.25rem;
     } */
 }
-/* @media(max-width:420px){
 
-    .header_navbar .fa-bars{
-        display: block;
-}
-.header_navbar .button{
-    display: none;
-}
-
-} */
 
 
 
@@ -730,7 +770,16 @@ footer .sub-flex{
     position: static;
     margin-top: 2rem;
     
-}}
+} .background-image{
+    display: none;
+}
+.growth_rate .position-absolute{
+    display: none;
+}
+.z1{
+    border-radius: .625rem;
+}
+}
 
 
 
@@ -807,10 +856,8 @@ footer .sub-flex{
 .fun_facts .divider{
   display: none; 
 }
-
-
 }
-@media(max-width: 972px){
+@media(max-width: 575px){
     .fun_facts .container{
     padding-block: 2.4rem;
 }
@@ -892,12 +939,16 @@ footer .sub-flex{
 .about_us .about_us_title{
     margin-bottom: 1.75rem;
 }
+.about_us_footer {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
 
 
 }
 @media(max-width: 575px){
-    .about_us .container{
-        padding-block: 3.5rem;
+    .about_us_left .img1{
+        display: none;
     }
     .about_us .container .container_top{
     margin-bottom: 2rem;
@@ -925,8 +976,8 @@ footer .sub-flex{
 
 
 /* ============our services============= */
-.our_services_section{
-    padding-block: 5.625rem 7.5rem;
+.our_services_section .container{
+    padding-bottom: 7.5rem;
 }
 .our_services_insurance_category{
     --columns:2;
@@ -965,12 +1016,11 @@ footer .sub-flex{
         --columns:1;
         gap: 1rem;
     }
-    .our_services_section{
-        padding-block: 5rem 6.5rem;
+    .our_services_section .container{
+        padding-block: 5rem;
     }
     .insurance_category_container{
         padding-inline: var(--tablet_container_padding);
-        
     }
     .our_services_section_title p{
         position: static;
@@ -981,8 +1031,9 @@ footer .sub-flex{
     .our_services_section_title p{
         position: static;
     }
+   
     .our_services_section .container{
-        padding-block: 3.5rem 4.5rem;
+        padding-block: .5rem;
         text-align: center;
     }
     .our_services_insurance_category{
@@ -990,7 +1041,9 @@ footer .sub-flex{
 }
 .insurance_category_container{
     padding-inline: var(--mobile_container_padding);
-    
+}
+.our_services_section .text_content_container{
+    text-align: left;
 }
 
 }
@@ -1081,6 +1134,9 @@ footer .sub-flex{
 }
 .choose_us_section .container .sub-title{
     margin-bottom: .35rem;
+}
+.choosing_us_reason_container div{
+    text-align: start;
 }
 }
 
@@ -1206,16 +1262,16 @@ footer .sub-flex{
         text-align: center;
     }
     .pricing_section .container{
-    padding-block: 5rem;
+    padding-block: 1.5rem;
 }
 .pricing_section h2{
     margin-bottom: 3rem;
 }
 .pricing_section_plan{
-    gap: 1.25rem;
+    gap: 1rem;
 }
 .pircing_plan{
-    padding-block: 2rem;
+    padding-block: 1.5rem;
     padding-inline: 2.75rem;
 }
 .pricing_plan_subheading{
@@ -1246,7 +1302,7 @@ footer .sub-flex{
     margin-bottom: .875rem;
 }
 .how_it_works_title{
-    margin-bottom: 3.75rem;
+    margin-bottom: 1.75rem;
 }
 .how_it_works .divider{
     width: 18.125rem;
@@ -1728,7 +1784,7 @@ footer .sub-flex{
 }
 .our_value h2{
     margin-bottom: 3.75rem;
-    width: 29rem;
+    max-width: 29rem;
 }
 .our_value .divider{
     height: .0625rem;
@@ -1761,7 +1817,6 @@ footer .sub-flex{
     }
     .our_value h2{
         margin-bottom: 3rem;
-        max-width: 29rem;
     }
     .our_value_content_container{
         grid-column: 1/-1;
@@ -1790,7 +1845,6 @@ footer .sub-flex{
     }
     .our_value h2{
         margin-bottom: 2.2rem;
-        width: 29rem;
         text-align: center;
         margin-inline: auto;
     }
