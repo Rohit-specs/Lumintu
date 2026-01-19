@@ -1305,13 +1305,13 @@ footer .sub-flex{
     margin-bottom: 1.75rem;
 }
 .how_it_works .divider{
-    width: 18.125rem;
+    max-width: 18.125rem;
     height: .0625rem;
     top: 2.7rem;
     left: -20rem;
 }
 .how_it_works .container .horizontal_card{
-    row-gap: 3.75rem;
+    gap: 3.75rem;
     --row:3;
     grid-template-rows: repeat(var(--row),1fr);
 }
@@ -1360,7 +1360,7 @@ footer .sub-flex{
     margin-bottom: .375rem;
 }
 .how_it_works .last_paragraph{
-    width: 36.375rem;
+    max-width: 36.375rem;
     height: auto;
     justify-self: center;
     margin-top: 4.375rem;
@@ -1371,7 +1371,7 @@ footer .sub-flex{
     margin-top: 1.25rem;
 }
 .how_it_works .last_paragraph .divider{
-    width: 16.250rem;
+    max-width: 16.250rem;
     left: -17.150rem;
     top: 2.1rem;
 }
@@ -1387,6 +1387,28 @@ footer .sub-flex{
 }
 .how_it_works .divider{
     display: none;
+}
+.how_it_works .card_type_1 li{
+    margin-left: 4.5rem;
+}
+.how_it_works .card_type_2 li{
+    margin-left: 4.5rem;
+}
+.how_it_works .container .horizontal_card{
+    gap: 2.5rem;
+}
+.how_it_works_title{
+    margin-bottom: 1.25rem;
+}
+.how_it_works_heading{
+    margin-bottom: .6rem;
+}
+.how_it_works .last_paragraph{
+    margin-top: 3.2rem;
+    padding-bottom: 5rem;
+}
+.how_it_works .sub-title{
+    margin-bottom: 1.25rem;
 }
 
 .card_img_wrapper{order: 1;}
@@ -1404,6 +1426,28 @@ footer .sub-flex{
 .last_paragraph .button{
     margin-top: 2rem;
     position: static;
+}
+.how_it_works .card_type_1 li{
+    margin-left: 3.5rem;
+}
+.how_it_works .card_type_2 li{
+    margin-left: 3.5rem;
+}
+.how_it_works .container .horizontal_card{
+    gap: 1.5rem;
+}
+.how_it_works_title{
+    margin-bottom: .875rem;
+}
+.how_it_works_heading{
+    margin-bottom: .45rem;
+}
+.how_it_works .last_paragraph{
+    margin-top: 3.2rem;
+    padding-bottom: 3.5rem;
+}
+.how_it_works .sub-title{
+    margin-bottom: 1rem;
 }
 }
 
