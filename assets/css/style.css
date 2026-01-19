@@ -196,9 +196,7 @@ img{
 .h-100{
     height: 100%;
 }
-.vh{
-    height: 100vh;
-}
+
 
 .button,button{
     font-size: var(--button_font);
@@ -459,10 +457,20 @@ header,.banner_section,.testimonial_section{
     .header_navbar .fa-bars{
         font-size: 2.2rem;
     }
-    .header_navbar .button{
+    /* .header_navbar .button{
         padding: 0.75rem 1.25rem;
-    }
+    } */
 }
+/* @media(max-width:420px){
+
+    .header_navbar .fa-bars{
+        display: block;
+}
+.header_navbar .button{
+    display: none;
+}
+
+} */
 
 
 
@@ -642,10 +650,9 @@ footer .sub-flex{
     height: 34.625rem;
 }
 .growth_rate .position-absolute{
-    height: 16rem;
     width: 21rem;
     transform: rotate(.77deg);
-    left: -4.1rem;
+    left: -12%;
 }
 .banner_section .d-flex span a:is(:hover,:active,:focus){
     color: var(--secondary_color);
@@ -653,6 +660,15 @@ footer .sub-flex{
 .help-play-video a:is(:hover,:active,:focus){
     color: var(--primary_color);
 }
+
+
+
+
+
+
+
+
+
 
 /* ================Responsive Banner================ */
 
@@ -792,7 +808,7 @@ footer .sub-flex{
 .about_us .container .container_top{
     --columns:2;
     grid-template-columns: repeat(var(--columns),1fr) ;
-    column-gap: 6.5rem;
+    gap: 6.5rem;
     margin-bottom: 6.875rem;
 }
 
@@ -820,16 +836,19 @@ footer .sub-flex{
 .about_us .button{
     margin-top: 1.25rem;
 }
+.about_us_footer .images_rows{
+    justify-content: space-between;
+}
 
 /* Responsive about us */
 @media(max-width: 972px){
     .about_us .container{
-    padding-block: 5rem;
+    padding-block: 4rem;
     
 }
 .about_us .container .container_top{
     --columns:1;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     align-items: center;
     text-align: center;
     row-gap: 4rem;
@@ -840,13 +859,21 @@ footer .sub-flex{
     justify-content: center;
 }
 .about_us_footer .images_rows{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 3rem;
 }
 .about_us .button{
     margin-top: 1rem;
 }
+.about_us :where(.sub_heading){
+    margin-bottom: .625rem;
+}
+.about_us .about_us_title{
+    margin-bottom: 1.75rem;
+}
+
 
 }
 @media(max-width: 575px){
@@ -854,7 +881,7 @@ footer .sub-flex{
         padding-block: 3.5rem;
     }
     .about_us .container .container_top{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     row-gap: 3rem;
     padding-inline: .5rem;
 }
@@ -866,6 +893,15 @@ footer .sub-flex{
     display: block;
     padding-block: .5rem;
 }
+.about_us .button{
+    margin-top: .875rem;
+}
+}
+.about_us :where(.sub_heading){
+    margin-bottom: .5rem;
+}
+.about_us .about_us_title{
+    margin-bottom: 1.5rem;
 }
 
 
@@ -1019,13 +1055,13 @@ footer .sub-flex{
     row-gap: 1.125rem;
 }
 .choose_us_section h2{
-    margin-bottom: 3rem;
+    margin-bottom: 2.125rem;
 }
 .choose_us_section_left_heading{
     margin-bottom: .875rem; 
 }
 .choose_us_section .container .sub-title{
-    margin-bottom: .4rem;
+    margin-bottom: .35rem;
 }
 }
 
@@ -1111,17 +1147,37 @@ footer .sub-flex{
 .pricing_section_heading{
     margin-bottom: .5rem;
 }
+.pricing_section .container{
+    padding-block: 5rem;
+}
+.pricing_section h2{
+    margin-bottom: 3.5rem;
+}
 .pricing_section_plan{
-    /* --columns:2;
-    column-gap: 1.5rem; */
-    margin-bottom: 1.5rem;
+    gap: 1.5rem;
 }
-.pricing_section_plan:nth-child(3){
-    justify-self: center;
-    max-width: 20rem;
-    margin-inline: auto;
+.pircing_plan{
+    padding-block: 2.2rem;
+    padding-inline: 3rem;
 }
-
+.pricing_plan_subheading{
+    margin-bottom: .65rem ;
+}
+.pricing_plan_heading{
+    margin-bottom: 1.25rem;
+}
+.pircing_plan p, .pricing_plan_subheading{
+    margin-block: 1.25rem;
+}
+.pricing_plain_title{
+    margin-bottom: .5rem;
+}
+.pircing_plan {
+    margin-bottom: 3rem;
+}
+.pircing_plan .button{
+    margin-top: 1.375rem;
+}
 }
 @media(max-width: 575px){
     .pricing_section_heading{
@@ -1130,7 +1186,39 @@ footer .sub-flex{
     .pricing_section_header_left{
         text-align: center;
     }
+    .pricing_section .container{
+    padding-block: 5rem;
 }
+.pricing_section h2{
+    margin-bottom: 3rem;
+}
+.pricing_section_plan{
+    gap: 1.25rem;
+}
+.pircing_plan{
+    padding-block: 2rem;
+    padding-inline: 2.75rem;
+}
+.pricing_plan_subheading{
+    margin-bottom: .65rem ;
+}
+.pricing_plan_heading{
+    margin-bottom: 1rem;
+}
+.pircing_plan p, .pricing_plan_subheading{
+    margin-block: 1rem;
+}
+.pricing_plain_title{
+    margin-bottom: .375rem;
+}
+.pircing_plan {
+    margin-bottom: 2.75rem;
+}
+.pircing_plan .button{
+    margin-top: 1.25rem;
+}
+}
+
 
 
 /* ===========how it works========== */
@@ -1221,6 +1309,9 @@ footer .sub-flex{
     grid-template-columns: repeat(var(--columns),1fr);
     align-items: center;
     justify-items: center;
+}
+.how_it_works .divider{
+    display: none;
 }
 
 }

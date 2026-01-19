@@ -52,7 +52,9 @@
               aria-label="Lumintu logo"
           /></a>
         </div>
-        <nav class="header_navbar d-flex align-center gap10 justify-between position-relative">
+        <nav
+          class="header_navbar d-flex align-center gap10 justify-between position-relative"
+        >
           <a href="./index.html" title="click to go back to home page">Home</a>
 
           <a
@@ -73,8 +75,7 @@
           >
           <i class="fa-solid fa-bars position-absolute inline-block"></i>
 
-            <a class="button" href="#">Get Started</a>
-          
+          <a class="button" href="#">Get Started</a>
         </nav>
       </div>
     </header>
@@ -104,6 +105,7 @@
                 ><i
                   class="fa-solid fa-phone grey-color"
                   aria-label="call icon"
+                  aria-hidden="true"
                 ></i>
                 <a
                   class="grey-color"
@@ -126,7 +128,7 @@
               <div class="background-image position-relative"></div>
               <img
                 loading="lazy"
-                class="inline-block position-absolute"
+                class="inline-block position-absolute left top"
                 src="assets/images/top_banner_img_1.png"
                 alt="a man spreading his one hand and and file in the other hand"
               />
@@ -514,13 +516,10 @@
                 <h2>
                   Lunintu's Insurance Plans
                   <p class="inline position-absolute right bottom">
-                    <i
-                      class="fa-solid fa-phone secondary-color inline"
-                      aria-label="Call icon"
-                      ><a class="secondary-color" href="tel:1234567891"
-                        >+123 456 789</a
-                      ></i
-                    >
+                    <a class="secondary-color" href="tel:1234567891">
+                      <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                      +123 456 789
+                    </a>
                   </p>
                 </h2>
               </div>
@@ -784,6 +783,7 @@
                 Hear from Our Clients<a
                   class="position-absolute right bottom secondary-color"
                   href="#"
+                  aria-label="Click to see testimonials"
                   >See All Testimonials</a
                 >
               </h2>
@@ -952,8 +952,8 @@
                   src="assets/images/call_icon.svg"
                   alt="call icon"
                 />
-                <div class="">
-                  <h4 class="">Phone Number</h4>
+                <div>
+                  <h4>Phone Number</h4>
                   <a
                     class="grey3-color"
                     aria-label="click here to call us"
@@ -968,8 +968,8 @@
                   src="assets/images/location_icon.svg"
                   alt="location icon"
                 />
-                <div class="">
-                  <h4 class="">Physical Address</h4>
+                <div>
+                  <h4>Physical Address</h4>
                   <address class="grey3-color">
                     123 Main St.Anytown, USA
                   </address>
@@ -982,9 +982,10 @@
                   aria-label="click here to mail us"
                   alt="mail icon"
                 />
-                <div class="">
-                  <h4 class="">Email Address</h4>
+                <div>
+                  <h4>Email Address</h4>
                   <a class="block grey3-color" href="mailto:info@lumintu.com"
+                  aria-label="click here to mail us"
                     >info@lumintu.com</a
                   >
                 </div>
@@ -1046,7 +1047,11 @@
               Tellus tristique duis elementum nisl. Dui maecenas blandit cum a
               consectetur metus enim
             </p>
-            <i class="fa-solid fa-phone" aria-label="call icon"></i>
+            <i
+              class="fa-solid fa-phone"
+              aria-hidden="true"
+              aria-label="call icon"
+            ></i>
             <a href="tel:1234567891" aria-label="click here to call us"
               >+123 456 789</a
             >
@@ -1070,13 +1075,18 @@
           <div class="footer_work_hour_section d-grid">
             <p class="footer_section_heading">Work Hours</p>
             <div class="sub-flex d-flex">
-              <i class="fa-regular fa-clock" aria-label="clock icon"></i>
+              <i
+                class="fa-regular fa-clock"
+                aria-label="clock icon"
+                aria-hidden="true"
+              ></i>
               <p>9 AM - 5 PM, Monday - Saturday</p>
             </div>
             <div class="sub-flex d-flex">
               <i
                 class="fa-regular fa-paper-plane"
                 aria-label="paper plane icon"
+                aria-hidden="true"
               ></i>
               <a href="mailto:support@kaliber.com"> support@kaliber.com</a>
             </div>
@@ -1084,6 +1094,7 @@
               <i
                 class="fa-solid fa-location-dot"
                 aria-label="location icon"
+                aria-hidden="true"
               ></i>
               <address>Jl. Menuju Roma No.01, Lewat Jalur Udara.</address>
             </div>
