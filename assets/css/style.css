@@ -565,6 +565,25 @@ footer .sub-flex{
         padding-block: 1.25rem;
     }
 }
+@media (max-width: 420px){
+
+    .header_navbar .button{
+        display: none;
+    }
+    .header .position-absolute,
+    .header_navbar .fa-bars{
+        display: block;
+        position: static;
+        font-size: 2.2rem;
+        cursor: pointer;
+    }
+    .header_navbar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0;
+    }
+}
 
 
 /* ====================Home Page==================== */
