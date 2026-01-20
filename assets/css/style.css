@@ -1526,7 +1526,7 @@ footer .sub-flex{
     padding-block: 7.5rem;
     --columns:2;
     grid-template-columns: repeat(var(--columns),1fr);
-    column-gap: 8.75rem;
+    gap: 8.75rem;
 }
 .get_started_and_get_in_touch .title{
     margin-bottom: .875rem;
@@ -1582,15 +1582,18 @@ footer .sub-flex{
     .get_started_and_get_in_touch .container{
     padding-block: 5rem;
     --columns:1;
-    row-gap:5rem;
+    gap:5rem;
 }
 }
 
 
 @media(max-width: 575px){
     .get_started_and_get_in_touch .container{
-    padding-block: 3.5rem;
-    row-gap:3.5rem;
+        padding-block: 3.5rem;
+        gap:3.5rem;
+    }
+    .get_started_and_get_in_touch .get_right{
+        padding: 3.375rem 2rem;
     }
 
 
