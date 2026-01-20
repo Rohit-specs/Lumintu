@@ -191,10 +191,10 @@ img{
 }
 
 .w-100{
-    width: 100%;
+    max-width: 100%;
 }
 .h-100{
-    height: 100%;
+    max-height: 100%;
 }
 
 
@@ -424,7 +424,7 @@ h3{
     line-height: var(--line_height);
 }
 
-main .container{
+main .container:not(header .container){
     padding-block:2.5rem;
 }
     
@@ -570,7 +570,7 @@ footer .sub-flex{
     }
 
     footer :is(.footer_contact_us_section,.footer_company_section,.footer_help_section,.footer_work_hour_section)
-    {  width: 100%;
+    {  max-width: 100%;
     }
 
     .footer_lower_section .container{
@@ -688,10 +688,10 @@ footer .sub-flex{
     column-gap: .5rem;
 }
 .customer_star_rating img{
-    width: 1.375rem;
+    max-width: 1.375rem;
 }
 .customer_img_container{
-    width: 3.75rem;
+    max-width: 3.75rem;
 }
 .banner_section .background-image{
     background-color: var(--secondary_color);
@@ -702,16 +702,16 @@ footer .sub-flex{
     border-radius: .625rem .625rem 0rem 0rem ;
     height: 15rem;}
 .banner_section .growth_rate> :where(img,div){
-    width: 11.5625rem;
+    max-width: 11.5625rem;
 }
 .banner_section .top_banner_img_3{
-    width: 20rem;
+    max-width: 20rem;
     height: 34.625rem;
 }
 .growth_rate .position-absolute{
-    width: 21rem;
+    max-width: 21rem;
     transform: rotate(.77deg);
-    left: -12%;
+    left: -18%;
 }
 .banner_section .d-flex span a:is(:hover,:active,:focus){
     color: var(--secondary_color);
@@ -759,11 +759,11 @@ footer .sub-flex{
   }
 
   .banner_section .growth_rate > :where(img, div){
-    width: 14rem;
+    max-width: 14rem;
   }
 
   .banner_section .top_banner_img_3{
-    width: 18rem;
+    max-width: 18rem;
   }
 
   .banner_section .customer_rating_container{
@@ -807,7 +807,7 @@ footer .sub-flex{
   }
 
   .banner_section .growth_rate > :where(img, div){
-    width: 12rem;
+    max-width: 12rem;
   }
 
   .growth_rate .position-absolute{
@@ -815,7 +815,7 @@ footer .sub-flex{
   }
 
   .banner_section .top_banner_img_3{
-    width: 15rem;
+    max-width: 15rem;
   }
 
   .customer_rating_container{
@@ -837,7 +837,7 @@ footer .sub-flex{
     padding-block: 6.25rem;
 }
 .fun_facts .divider{
-    width: .0625rem;
+    max-width: .0625rem;
     height: 2.5rem;
     background-color: var(--border1);
 }
@@ -1004,7 +1004,7 @@ footer .sub-flex{
     margin-bottom: .625rem;
 }
 .blue_icon_container img{
-    width: 1.5rem;
+    max-width: 1.5rem;
 }
 .our_services_section_title a:is(:hover,:active,:focus){
     color: var(--primary_color);
@@ -1325,7 +1325,7 @@ footer .sub-flex{
 }
 .header_how_it_works{
     justify-self: center;
-    width: 28.125rem;
+    max-width: 28.125rem;
     height: 9.375rem;
     margin-bottom: 3.75rem;
 }
@@ -1735,7 +1735,7 @@ footer .sub-flex{
     padding-block: 7.5rem;
 }
 .our_story .play_icon{
-    width: 3.125rem;
+    max-width: 3.125rem;
     right: 1.25rem;
     bottom: 1.25rem;
 }
@@ -1750,7 +1750,7 @@ footer .sub-flex{
 .our_story .video_box_text{
     top: 1.875rem;
     left: 2.5rem;
-    width: 7.5rem;
+    max-width: 7.5rem;
 }
 .video_box{
     max-width: 20rem;
@@ -1763,7 +1763,7 @@ footer .sub-flex{
     margin-bottom: .875rem;
 }
 .our_story .divider{
-    width: 18.125rem;
+    max-width: 18.125rem;
     height: .0625rem;
     top: 50%;
     left: -68%;
@@ -1945,12 +1945,12 @@ footer .sub-flex{
 }
 .our_team .divider {
     height: .0625rem;
-    width: 18.125rem;
+    max-width: 18.125rem;
     top: 50%;
     left: -68%;
 }
 .our_team_footer .divider{
-    width: 16rem;
+    max-width: 16rem;
     top: 24%;
     left: -47%;
 }
@@ -2089,7 +2089,7 @@ footer .sub-flex{
     max-width: 50.125rem;
 }
 .faq .divider{
-    width: 18.125rem;
+    max-width: 18.125rem;
     height: 0.0625rem;
     top: 46%;
     left: -68%;
