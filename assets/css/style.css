@@ -1203,6 +1203,7 @@ footer .sub-flex{
 .pircing_plan .button{
     margin-top: 1.5rem;
     text-align: center;
+    width: 100%;
 }
 .bg-primary .button:is(:hover,:active,:focus){
     color: var(--primary_color);
