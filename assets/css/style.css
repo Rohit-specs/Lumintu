@@ -735,6 +735,9 @@ footer .sub-flex{
     .growth_rate .position-absolute{
 
     left: -24%;
+}
+.banner_section .container{
+    column-gap: 1rem;
 }}
 @media (max-width: 1100px)
 {
@@ -768,7 +771,7 @@ footer .sub-flex{
   .banner_section_right{
     grid-template-columns: 1fr;
     justify-items: center;
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
 
   .banner_section .growth_rate > :where(img, div){
