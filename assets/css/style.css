@@ -730,6 +730,19 @@ footer .sub-flex{
 
 
 /* ================Responsive Banner================ */
+@media (max-width: 1150px)
+{
+    .growth_rate .position-absolute{
+
+    left: -24%;
+}}
+@media (max-width: 1100px)
+{
+    .growth_rate .position-absolute{
+
+    left: -26%;
+}
+}
 
 @media (max-width: 972px){
 
@@ -837,7 +850,7 @@ footer .sub-flex{
     padding-block: 6.25rem;
 }
 .fun_facts .divider{
-    max-width: .0625rem;
+    width: .0625rem;
     height: 2.5rem;
     background-color: var(--border1);
 }
@@ -948,6 +961,9 @@ footer .sub-flex{
 }
 @media(max-width: 575px){
     .about_us_left .img1{
+        display: none;
+    }
+    .about_us_left .img3{
         display: none;
     }
     .about_us .container .container_top{
