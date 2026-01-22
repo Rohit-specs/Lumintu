@@ -17,6 +17,6 @@ Just open `index.html` in a browser — nothing else needed!
 HTML, CSS
 
 ## 📸 Screenshots
-![Home page image](./assets/images/image.png)
+![Home page image](./assets/images/home_page_img_desktop.png)
 ![About page image](./assets/images/about_us_page_img_desktop.png)
 ![Contact page image](./assets/images/contact_us_img_desktop.png)
